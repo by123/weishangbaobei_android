@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<top.limuyang2.shadowlayoutlib.ShadowLinearLayout android:id="@id/shadowLinearLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48" app:l_shadowAlpha="0.5" app:l_shadowElevation="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/navBack" android:layout_width="@dimen/dp_47" android:layout_height="@dimen/dp_47">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/main_back_img" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_18" android:textColor="@color/black" android:layout_gravity="center|left" android:id="@id/navTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip" android:text="" />
+        <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/navRightLayout" android:visibility="visible" android:layout_width="@dimen/dp_100" android:layout_height="fill_parent">
+            <FrameLayout android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:gravity="center|right" android:id="@id/navRightText" android:paddingRight="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/navRightImg" android:visibility="gone" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:layout_marginRight="@dimen/dp_12" android:src="@mipmap/home_item_help" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</top.limuyang2.shadowlayoutlib.ShadowLinearLayout>

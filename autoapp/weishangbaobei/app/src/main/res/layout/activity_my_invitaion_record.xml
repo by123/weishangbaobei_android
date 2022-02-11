@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/navigation_bar" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp_46" app:srlAccentColor="@android:color/white" app:srlEnableHeaderTranslationContent="true" app:srlEnableLoadMore="false" app:srlPrimaryColor="@color/refresh_color">
+        <com.scwang.smartrefresh.header.BezierCircleHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@mipmap/go_make_money_top_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_288">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_301" android:layout_height="@dimen/dp_147" android:layout_marginTop="@dimen/dp_57" android:src="@mipmap/go_make_money_title_1" />
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_290" android:layout_height="@dimen/dp_40" android:src="@mipmap/go_make_money_title_2" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/backLayout" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45">
+                    <ImageView android:layout_gravity="center" android:background="@drawable/ic_back_white" android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_19" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="@dimen/dp_45" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/main_color" android:id="@id/inviteReward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_2" android:text="结算奖励(元)" />
+                </LinearLayout>
+                <View android:background="@color/dark_gray2" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_1" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="@dimen/dp_45" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/main_color" android:id="@id/invitePeopleNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_2" android:text="邀请人数（人）" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/divider_line" />
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+        </LinearLayout>
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_46">
+        <include layout="@layout/divider_line" />
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_46">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.5">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_5" android:text="可提现金额（" />
+                <TextView android:textSize="@dimen/dp_22" android:textColor="@color/main_color" android:gravity="center" android:id="@id/withdrawalAmount" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_2" android:text="0.00" />
+                <TextView android:textSize="@dimen/dp_12" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_1" android:layout_marginTop="@dimen/dp_5" android:text="）元" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/withdrawal" android:background="@color/main_color" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="申请提现" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64d0a5b1-d033-4227-ad0a-686155516b39" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="ProjectId" id="1ftz0cHDtgQKA4jwfKL1kKwm81w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="D:/android-sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64d0a5b1-d033-4227-ad0a-686155516b39" name="Default Changelist" comment="" />
+      <created>1595934045072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595934045072</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1892" y="198" width="692" height="486" key="find.popup" timestamp="1608635937336">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="408" y="140" width="692" height="486" key="find.popup/0.23.1280.709/1280.23.1920.1057@0.23.1280.709" timestamp="1608635469320" />
+    <state x="1892" y="198" width="692" height="486" key="find.popup/0.23.1280.709/1280.23.1920.1057@1280.23.1920.1057" timestamp="1608635937336" />
+    <state x="408" y="140" width="692" height="486" key="find.popup/0.23.1280.709@0.23.1280.709" timestamp="1608384328198" />
+    <state x="1892" y="198" width="692" height="486" key="find.popup/0.23.1280.712/1280.23.1920.1057@1280.23.1920.1057" timestamp="1608019027201" />
+    <state x="408" y="141" width="692" height="486" key="find.popup/0.23.1280.714/1280.23.1920.1057@0.23.1280.714" timestamp="1600770835234" />
+    <state x="1892" y="198" width="692" height="486" key="find.popup/0.23.1280.714/1280.23.1920.1057@1280.23.1920.1057" timestamp="1608030876135" />
+    <state x="408" y="141" width="692" height="486" key="find.popup/0.23.1280.714@0.23.1280.714" timestamp="1602506896250" />
+    <state x="1892" y="186" width="1038" height="674" key="find.popup/0.23.1280.777/1280.23.1920.989@1280.23.1920.989" timestamp="1607931636747" />
+  </component>
+</project>

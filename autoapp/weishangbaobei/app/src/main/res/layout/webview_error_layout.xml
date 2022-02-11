@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/errorLayout" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip">
+        <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/listview_null_title_img" android:background="@drawable/webview_error_img" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        <TextView android:textSize="@dimen/dp_20" android:textColor="@color/common_7a7a7a" android:id="@id/listview_null_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="加载失败" />
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/common_7a7a7a" android:id="@id/listview_null_desc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="请检查网络后， 下拉重新新加载！" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/listview_null_btn" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="50.0dip" android:text="reload" />
+        <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/quantityLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <TextView android:background="@mipmap/function_num" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginRight="@dimen/sp_12" />
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:gravity="center" android:id="@id/numberTitleText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="检测数量" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/quantityText" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="300" android:layout_centerInParent="true" android:textCursorDrawable="@drawable/ed_color" />
+            <TextView android:background="@mipmap/function_right_arrow" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginLeft="@dimen/dp_5" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

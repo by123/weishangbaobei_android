@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_bar" />
+    <ScrollView android:paddingLeft="@dimen/sp_15" android:paddingRight="@dimen/dp_15" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_20">
+                <ImageView android:background="@mipmap/function_find_group" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginRight="@dimen/dp_12" />
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="选择删除方式" />
+            </LinearLayout>
+            <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radioGroup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_10">
+                <RadioButton android:textSize="@dimen/dp_13" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/rdoBtnDeleteAll" android:background="@drawable/radiobutton_rect_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dp_35" android:layout_marginLeft="@dimen/dp_13" android:button="@null" android:text="删除全部好友" android:layout_weight="1.0" />
+                <RadioButton android:textSize="@dimen/dp_13" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/rdoBtnDeleteNickname" android:background="@drawable/radiobutton_rect_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dp_35" android:layout_marginLeft="@dimen/dp_15" android:checked="true" android:button="@null" android:text="按昵称删除" android:layout_weight="1.0" />
+                <RadioButton android:textSize="@dimen/dp_13" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/rdoBtnDeleteLabel" android:background="@drawable/radiobutton_rect_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dp_35" android:layout_marginLeft="@dimen/dp_15" android:button="@null" android:text="按标签删除" android:layout_weight="1.0" />
+            </RadioGroup>
+            <LinearLayout android:id="@id/layoutLabel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_25" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" layout="@layout/main_set_tag" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutNickname" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20">
+                <EditText android:textSize="@dimen/dp_12" android:id="@id/editNickName" android:background="@drawable/main_input_rect_bg" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_27" android:layout_marginTop="@dimen/dp_12" android:hint="请输入要删除好友的昵称，多个请用 “##” 隔开。例如：张三##李四 " android:textCursorDrawable="@drawable/edittext_cursor_block_color" />
+                <RadioGroup android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_17" android:layout_marginRight="@dimen/dp_5">
+                    <RadioButton android:textSize="12.0dip" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/rdoBtnDeleteNickname3" android:background="@drawable/radiobutton_rect_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:button="@null" android:text="@string/delect_nick_1" android:layout_weight="1.0" />
+                    <RadioButton android:textSize="12.0dip" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/rdoBtnDeleteNickname2" android:background="@drawable/radiobutton_rect_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_4" android:button="@null" android:text="@string/delect_nick_2" android:layout_weight="1.0" />
+                </RadioGroup>
+            </LinearLayout>
+            <TextView android:background="@drawable/material_layout_split_line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_2" android:layout_marginLeft="@dimen/dp_20" />
+            <com.wx.assistants.view.NumSettingOnlyLayout android:id="@id/numSettingOnlyLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/nav_start_wx_layout" />
+</LinearLayout>

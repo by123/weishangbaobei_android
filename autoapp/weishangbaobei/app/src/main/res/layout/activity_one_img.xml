@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/navigation_bar" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@mipmap/function_send" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/sp_18" android:layout_marginRight="@dimen/dp_12" />
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="@dimen/dp_24" android:text="自动发送到朋友圈" android:layout_weight="1.0" />
+            <Switch android:gravity="center|right" android:id="@id/switchButton" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_20" android:checked="false" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_37" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_10" android:text="如果你想二次编辑朋友圈内容后再发送，请关闭此项！" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/backStartLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginRight="@dimen/dp_15" layout="@layout/divider_line_height20" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:background="@mipmap/function_send" android:visibility="invisible" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/sp_18" android:layout_marginRight="@dimen/dp_12" />
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="@dimen/dp_24" android:text="自动发送后，回到开始位置" android:layout_weight="1.0" />
+                <Switch android:gravity="center|right" android:id="@id/switchBackStartButton" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_20" android:checked="false" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_27" android:layout_marginTop="@dimen/dp_7" android:layout_marginRight="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_5" android:text="若转发好友的相册，请确保好友昵称唯一!!!" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginRight="@dimen/dp_15" layout="@layout/divider_line_height20" />
+    <com.wx.assistants.view.CircleDeleteLayout android:gravity="center_vertical" android:id="@id/executeRemarkLayout" android:paddingLeft="@dimen/dp_13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginRight="@dimen/dp_15" layout="@layout/divider_line_height20" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@mipmap/function_send" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/sp_18" android:layout_marginRight="@dimen/dp_12" />
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="@dimen/dp_24" android:text="极速转发" android:layout_weight="1.0" />
+            <Switch android:gravity="center|right" android:id="@id/switchSpeedButton" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_20" android:checked="true" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_37" android:layout_marginTop="@dimen/dp_7" android:layout_marginRight="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_5" android:text="开启极速转发速度会明显提升，但也有个别手机会出现图片被剪切，导致不完整情况！对于图片完整度要求较高的话，请关闭按钮！" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" layout="@layout/divider_line_height20" />
+    <com.wx.assistants.view.CircleSelectSettingLayout android:gravity="center_vertical" android:id="@id/circleSelectSettingLayout" android:paddingLeft="@dimen/dp_13" android:paddingRight="@dimen/dp_13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" />
+    <TextView android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0" />
+    <include layout="@layout/nav_start_wx_layout" />
+</LinearLayout>

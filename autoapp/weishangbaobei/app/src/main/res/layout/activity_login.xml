@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_220" android:layout_marginLeft="@dimen/dp_40">
+                <ImageView android:layout_gravity="left" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_marginTop="@dimen/dp_70" android:src="@mipmap/baby_logo_no_bgcolor" />
+                <TextView android:textSize="@dimen/sp_24" android:textColor="@color/color_333333" android:gravity="left" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="你好，" />
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/color_333333" android:gravity="left" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="欢迎来到微商宝贝" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/dp_40" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/dp_62">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@mipmap/login_phone" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" />
+                    <EditText android:textSize="@dimen/dp_15" android:textColorHint="@color/color_hint" android:layout_gravity="center" android:id="@id/numberEditText" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/dp_47" android:layout_marginLeft="@dimen/dp_13" android:hint="请输入手机号" android:inputType="phone" android:textCursorDrawable="@drawable/ed_color" />
+                </LinearLayout>
+                <include layout="@layout/divider_line2px" />
+                <LinearLayout android:orientation="vertical" android:id="@id/smsLoginLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="@dimen/dp_62"> /> <ImageView android:layout_gravity="center_vertical" android:background="@mipmap/login_pic_yzm" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" />
+                        <EditText android:textSize="@dimen/dp_15" android:textColorHint="@color/color_hint" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/imgVerificationEditText" android:background="@null" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="@dimen/dp_13" android:hint="图片验证码" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:layout_weight="1.0" android:inputType="number" android:textCursorDrawable="@drawable/ed_color" />
+                        <ImageView android:layout_gravity="center" android:id="@id/verification_img" android:layout_width="@dimen/dp_120" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                    <include layout="@layout/divider_line2px" />
+                    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingTop="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="@dimen/dp_62">
+                        <ImageView android:layout_gravity="center_vertical" android:background="@mipmap/login_yzm" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" />
+                        <EditText android:textSize="@dimen/dp_15" android:textColor="@color/black" android:textColorHint="@color/color_hint" android:layout_gravity="center" android:id="@id/smsVerificationEditText" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/dp_47" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="10.0dip" android:hint="手机验证码" android:layout_weight="1.0" android:inputType="number" android:textCursorDrawable="@drawable/ed_color" />
+                        <TextView android:textSize="@dimen/dp_15" android:textColor="@color/black" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/verification_btn" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_47" android:layout_marginRight="@dimen/dp_2" android:text="发送验证码" />
+                    </LinearLayout>
+                    <include layout="@layout/divider_line2px" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/passwordLoginLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/dp_62">
+                        <ImageView android:layout_gravity="center_vertical" android:background="@mipmap/login_password" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" />
+                        <EditText android:textSize="@dimen/dp_15" android:textColorHint="@color/color_hint" android:layout_gravity="center" android:id="@id/passwordEditText" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/dp_47" android:layout_marginLeft="@dimen/dp_13" android:hint="请输入登录密码" android:layout_weight="1.0" android:inputType="textPassword" android:textCursorDrawable="@drawable/ed_color" />
+                        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/eyeLayout" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_60">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/eyeImg" android:background="@mipmap/login_eye_visible" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <include layout="@layout/divider_line2px" />
+                </LinearLayout>
+                <Button android:textSize="@dimen/dp_16" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/start_wx" android:background="@drawable/main_btn_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_38" android:layout_marginBottom="@dimen/dp_18" android:text="登录" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_999999" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/switchLogin" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="50.0dip" android:text="使用密码登录" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#ffcccccc" android:id="@id/passwordLoginPoint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="如需使用密码登录，请先使用短信验证码登录，在我的->设置->设置登录密码即可" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

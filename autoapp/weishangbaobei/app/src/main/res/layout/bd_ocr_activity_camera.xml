@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/take_picture_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/bd_ocr_take_picture" />
+    <include android:id="@id/crop_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/bd_ocr_crop" />
+    <include android:id="@id/confirm_result_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/bd_ocr_confirm_result" />
+</RelativeLayout>

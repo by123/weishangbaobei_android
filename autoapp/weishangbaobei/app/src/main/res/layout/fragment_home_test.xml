@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlAccentColor="@android:color/white" app:srlEnableHeaderTranslationContent="true" app:srlEnableLoadMore="false" app:srlPrimaryColor="@color/refresh_color">
+        <com.scwang.smartrefresh.header.BezierCircleHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.wx.assistants.view.CustomScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v4.view.ViewPager android:id="@id/banner" android:visibility="visible" android:layout_width="@dimen/dp_360" android:layout_height="@dimen/dp_150" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_4">
+                    <LinearLayout android:id="@id/personalAssistantLayout" android:visibility="gone" android:layout_width="@dimen/dp_171" android:layout_height="@dimen/dp_53">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_53" android:layout_marginTop="@dimen/dp_12">
+                            <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="人脉助手" />
+                            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="你的人脉好助手" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:id="@id/watermark" android:layout_width="@dimen/dp_171" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_8">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_53">
+                            <TextView android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="一键拥有专属水印" />
+                            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="一键拥有专属水印" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:background="@color/gray_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4">
+                    <ImageView android:id="@id/pic" android:layout_width="@dimen/dp_360" android:layout_height="@dimen/dp_81" android:scaleType="centerCrop" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/orange" android:layout_width="@dimen/dp_17" android:layout_height="@dimen/dp_15" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_9" />
+                        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/black" android:ellipsize="marquee" android:id="@id/broad" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_marginTop="@dimen/dp_10" android:text="" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/troubleShootingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/dp_42" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_2" android:layout_marginTop="@dimen/dp_9" android:layout_marginBottom="@dimen/dp_10" android:text="常用功能" android:layout_weight="1.0" />
+                            <TextView android:textSize="@dimen/sp_13" android:textColor="@color/main_color" android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/dp_71" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_151" android:layout_marginTop="@dimen/dp_11" android:layout_marginBottom="@dimen/dp_10" android:text="常用功能解答" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="@dimen/dp_7" android:layout_height="@dimen/dp_14" android:layout_marginTop="@dimen/dp_1" android:layout_marginRight="@dimen/dp_14" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:orientation="vertical" android:id="@id/checkZombieLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:id="@id/jc" android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_13" />
+                                <ImageView android:id="@id/mf" android:layout_width="@dimen/dp_33" android:layout_height="@dimen/dp_17" android:layout_marginLeft="@dimen/dp_73" android:layout_marginTop="@dimen/dp_9" />
+                                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:id="@id/jsf1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="检测僵尸粉" android:layout_below="@id/jc" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:id="@id/jsf2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="全自动检测" android:layout_below="@id/jsf1" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="0误删一次全部清理" android:layout_below="@id/jsf2" />
+                            </RelativeLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/oneKeyFrowardImgLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_13" />
+                                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="一键转发图文" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="一键转发图文" android:layout_below="@id/jsf1" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="一键转发小视频" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/windowForwardLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_13" />
+                                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="聊天窗口转发" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="一键传发聊天窗口" android:layout_below="@id/jsf1" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="图片、视频" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/group_friend" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_13" />
+                                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="自动群聊加粉" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="自动添加群成员" android:layout_below="@id/jsf1" />
+                                <TextView android:textSize="@dimen/sp_10" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="做生意、引流、推广必备" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5">
+                                <LinearLayout android:id="@id/mass" android:layout_width="@dimen/dp_171" android:layout_height="@dimen/dp_53">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_53" android:layout_marginTop="@dimen/dp_18">
+                                        <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="群发功能" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:id="@id/clear_up" android:layout_width="@dimen/dp_171" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_8">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_53" android:layout_marginTop="@dimen/dp_18">
+                                        <TextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="清理功能" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:id="@id/ivAccessory" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_13" />
+                                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="自动加附近人" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="男女可选" android:layout_below="@id/jsf1" />
+                                <TextView android:textSize="@dimen/sp_10" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="散客必备" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/voice" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <ImageView android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_13" />
+                                <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="语音转发" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="一键转发语音" android:layout_below="@id/jsf1" />
+                                <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="团队培训必备" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="@dimen/dp_56" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_14" android:layout_marginTop="@dimen/dp_9" android:layout_marginBottom="@dimen/dp_10" android:text="更多功能" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="vertical" android:id="@id/au_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginTop="@dimen/dp_13" />
+                                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="一键点赞/评论" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="朋友圈一键点赞" android:layout_below="@id/jsf1" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="朋友圈一键评论" />
+                                    </LinearLayout>
+                                    <LinearLayout android:orientation="vertical" android:id="@id/au_pull" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <ImageView android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_13" />
+                                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="自动拉人进群" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="自动拉所有好友进群" android:layout_below="@id/jsf1" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="自动拉标签好友进群" />
+                                    </LinearLayout>
+                                    <LinearLayout android:orientation="vertical" android:id="@id/autoPassValidation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginTop="@dimen/dp_13" />
+                                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="自动接受好友请求" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="自动接受好友添加请求" android:layout_below="@id/jsf1" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:layout_marginBottom="@dimen/sp_22" android:text="节省时间、提高效率" />
+                                    </LinearLayout>
+                                    <LinearLayout android:orientation="vertical" android:id="@id/wechatSportLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginTop="@dimen/dp_13" />
+                                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="微信运动点赞" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="按标签筛选点赞" android:layout_below="@id/jsf1" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="按步数点赞" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="vertical" android:id="@id/clone_circle" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <ImageView android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_53" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_13" />
+                                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="克隆朋友圈" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="克隆好友动态" android:layout_below="@id/jsf1" />
+                                        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/theme_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_1" android:text="可设置开始和结束日期" />
+                                    </LinearLayout>
+                                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/voiceLayout" android:padding="5.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                        <TextView android:textSize="10.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_9" android:text="语音转发" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.wx.assistants.view.CustomScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

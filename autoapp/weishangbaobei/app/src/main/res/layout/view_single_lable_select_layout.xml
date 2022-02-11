@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/selectSingleLabel" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@mipmap/function_tag" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/sp_18" android:layout_marginRight="@dimen/dp_12" />
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/bigText" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="保存到微信标签" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_999999" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/smallText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="" />
+    <ImageView android:background="@mipmap/function_right_arrow" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginLeft="@dimen/dp_5" />
+</LinearLayout>

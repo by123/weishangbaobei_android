@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_page_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.finalteam.rxgalleryfinal.ui.widget.FixViewPager android:orientation="vertical" android:id="@id/view_pager_page" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:background="#ef2b2c30" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <android.support.v7.widget.AppCompatCheckBox android:id="@id/cb_page_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="选中" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Widget.AppCompat.CompoundButton.CheckBox" />
+    </RelativeLayout>
+</RelativeLayout>

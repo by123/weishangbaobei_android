@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <top.limuyang2.shadowlayoutlib.ShadowLinearLayout android:id="@id/shadowLinearLayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="@dimen/dp_47" android:layout_marginBottom="@dimen/dp_2" app:l_radius="1.0dip" app:l_shadowAlpha="0.2" app:l_shadowElevation="3.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/navBack" android:layout_width="@dimen/dp_47" android:layout_height="@dimen/dp_47">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/water_mark_fanhui_btn" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dp_19" android:textColor="@color/white" android:layout_gravity="center|left" android:id="@id/navTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="80.0dip" android:text="" />
+            <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/navRightLayout" android:visibility="visible" android:layout_width="@dimen/dp_100" android:layout_height="fill_parent">
+                <FrameLayout android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/white" android:gravity="center|right" android:id="@id/navRightText" android:paddingRight="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="" />
+                    <ImageView android:layout_gravity="center|right" android:id="@id/navRightImg" android:visibility="gone" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:layout_marginRight="@dimen/dp_12" android:src="@mipmap/home_item_help" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </top.limuyang2.shadowlayoutlib.ShadowLinearLayout>
+</LinearLayout>

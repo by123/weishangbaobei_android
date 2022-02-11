@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Is_download_voice_click_later">下载语音，请稍后再单击</string>
+    <string name="Recording_without_permission">您没有权限录制</string>
+    <string name="Send_voice_need_sdcard_support">录音需要SD卡支持</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="accessibility_desc">"提示：
+
+1.若不能使用辅助功能，请重启手机后重试；
+
+2.请勿开启多个辅助功能，否则会干扰本应用运行；
+
+3.应用退出后，该服务会自动关闭，如果再次使用该功能请重新开启该服务；
+
+4.此功能支持android4.4以上的系统，如有疑问请在微商宝贝APP选择联系客服"</string>
+    <string name="accessibility_tip">★微商辅助★</string>
+    <string name="album">图片</string>
+    <string name="all_image">所有图片</string>
+    <string name="all_images_video">图片/视频</string>
+    <string name="all_videos">所有视频</string>
+    <string name="app_name">微商宝贝</string>
+    <string name="app_name2">微信微商宝贝</string>
+    <string name="app_name_ws">❤️微商宝贝❤️</string>
+    <string name="app_name_wtbaby">微商宝贝</string>
+    <string name="app_version_desc">发现新的版本，请下载体验</string>
+    <string name="app_version_title">发现新版本</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="attach_file">File</string>
+    <string name="backPage">&lt;</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="brvah_app_name">Library</string>
+    <string name="brvah_load_end">没有更多数据</string>
+    <string name="brvah_load_failed">加载失败，请点我重试</string>
+    <string name="brvah_loading">正在加载中...</string>
+    <string name="camera">拍摄</string>
+    <string name="camera_permission_required">本功能需要相机权限！</string>
+    <string name="cancel">取消</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="check_for_update_new">new</string>
+    <string name="check_for_updates_version_info">最新 V%1$s</string>
+    <string name="choose">选择</string>
+    <string name="clean_zombie_dnd_1">"自定义消息
+(最高效)"</string>
+    <string name="clean_zombie_dnd_2">"朋友圈查死粉
+(少打扰)"</string>
+    <string name="clean_zombie_dnd_3">"朋友圈查屏蔽
+(无打扰)"</string>
+    <string name="clean_zombie_dnd_extra_1">温馨提示：输入您要发送的文本消息，同时检测死粉</string>
+    <string name="clean_zombie_dnd_extra_2">温馨提示：输入您要发送的文本消息，系统将首先查看朋友圈是否可见，如正常可见则不发送此消息，如被屏蔽则进一步发送该消息确认是否是好友。</string>
+    <string name="clean_zombie_dnd_extra_3">"温馨提示：直接从朋友圈检测，不发送消息，绝对无忧，如果能确定是非好友，则标记\"A000非好友_昵称\"，如果无法查看朋友圈，则标记为\"A000被屏蔽_昵称\"
+
+被屏蔽定义：
+1.好友的朋友圈对你不可见;
+2.好友微信号被封，无法登录的无效微信号"</string>
+    <string name="clean_zombie_dnd_extra_4">温馨提示：1.发送收藏列表的第一条，请吧要发的内容收到第一条。2.发送收藏的同时还可以附带一条留言信息，同时检测死粉</string>
+    <string name="comfirm_collection">"启动微信后，先手动点击 弹框中的 收藏  按钮，再点开始按钮，将自动转发"</string>
+    <string name="confirm">确认</string>
+    <string name="contact_album">个人相册</string>
+    <string name="delect_nick_1">"删除那些昵称带有
+“AOOO非好友”的好友"</string>
+    <string name="delect_nick_2">"删除那些昵称带有
+“AOOO被屏蔽”的好友"</string>
+    <string name="dialog_account">账号</string>
+    <string name="dialog_account_exists">已存在,无需重复注册</string>
+    <string name="dialog_account_log">账号已登录，填写新密码方便下次登录</string>
+    <string name="dialog_back">返回</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_change_cover">朋友的评论</string>
+    <string name="dialog_continue_fill_in">继续填写</string>
+    <string name="dialog_enable_accessibility_msg">Enable my Accessibility Service in order to get current activity info on Android 5.0+</string>
+    <string name="dialog_enable_accessibility_positive_btn">Enable It</string>
+    <string name="dialog_enable_overlay_window_msg">Allow permission to show window over other apps on Android 7.1.1+</string>
+    <string name="dialog_enable_overlay_window_positive_btn">settings</string>
+    <string name="dialog_forgot_pwd">忘记密码？</string>
+    <string name="dialog_go_login">马上登录</string>
+    <string name="dialog_incorrect">账号或登录密码错误，请重新输入.</string>
+    <string name="dialog_log_out">退出登录</string>
+    <string name="dialog_log_out_msg">退出后不会删除任何历史数据，下次登录依然可以使用本账号。</string>
+    <string name="dialog_msg_delay">短信可能有延误，请再等一会</string>
+    <string name="dialog_nil_network">网络通信出现问题，请稍后再试.</string>
+    <string name="dialog_number_illegal">请选择正确的地区，并输入正确的手机号码</string>
+    <string name="dialog_ok">好的</string>
+    <string name="dialog_register_acct">注册账号</string>
+    <string name="dialog_register_pro">账号不存在，请重新输入或注册新账号</string>
+    <string name="dialog_registered">已注册成功，填写个人资料让您的朋友更好的认识你</string>
+    <string name="dialog_sign_up">进入APP</string>
+    <string name="dialog_try_again">重新输入</string>
+    <string name="disclaimer_str">"在使用微商宝贝的所有功能之前、请您务必仔细阅读并透彻理解本声明。
+
+您可以选择不使用微商宝贝，但如果您使用微商宝贝，您的使用行为将被视为对本声明全部内容的认可。
+
+鉴于微商宝贝使用非人工检索/分析方式，无法确定您输入的条件进行是否合法、所以微商宝贝对检索/分析出的结果不承担责任。
+
+如果因以微商宝贝的检索/分析结果作为任何商业行为或者学术研究的依据而产生不良后集，微商宝贝不承担任何法律责任。关于版权:
+
+一、网站或个人使用时不得进行商业性的原版原式的转载，也不得歪曲和篡改本系统所发布的内容。
+
+二、被微商宝贝授权使用的用户、 不应起超越授权范围。
+
+三、如因内容、版权和其它问题需要同本系统联系的，请在问题反馈出提交。关于解释权:
+
+所有用户请合理合法使用微商宝贝，因用户不合理的操作造成的后果由用户自己承担，微商宝贝开发开发商不承担任何责任和损失。
+"</string>
+    <string name="done">完成</string>
+    <string name="done_num">完成(%1$d/%2$d)</string>
+    <string name="fgh_mask_bottom">Scroll to move handle</string>
+    <string name="fgh_mask_top_pull">Pull To Break Out!</string>
+    <string name="fgh_mask_top_release">Release To Break Out!</string>
+    <string name="fgh_text_game_over">Game Over</string>
+    <string name="fgh_text_loading">Refreshing…</string>
+    <string name="fgh_text_loading_failed">Refreshing Failed</string>
+    <string name="fgh_text_loading_finish">Refreshing Finished</string>
+    <string name="friend_label_1">"群发所有好友
+(发通讯录好友)"</string>
+    <string name="friend_label_2">"群发部分好友
+(只发送选中标签)"</string>
+    <string name="friend_label_3">"屏蔽部分好友
+(不发送屏蔽标签)"</string>
+    <string name="friend_label_4">"拉所有好友
+(拉通讯录好友)"</string>
+    <string name="friend_label_5">"拉部分好友
+(只拉选中标签)"</string>
+    <string name="friend_label_6">"屏蔽部分好友
+(不拉屏蔽标签)"</string>
+    <string name="friend_label_7">点赞/评论所有好友</string>
+    <string name="friend_label_8">点赞/评论部分好友</string>
+    <string name="friend_label_9">屏蔽部分好友</string>
+    <string name="gallery_all_image">所有图片</string>
+    <string name="gallery_all_video">所有视频</string>
+    <string name="gallery_default_media_empty_tips">空空如也</string>
+    <string name="gallery_default_request_storage_access_permission_tips">App请求读取你的相册</string>
+    <string name="gallery_default_request_storage_write_permission_tips">App请求写入你的相册</string>
+    <string name="gallery_device_camera_unable">相机不可用</string>
+    <string name="gallery_device_no_camera_tips">该设备无摄像头</string>
+    <string name="gallery_edit_phote">裁剪</string>
+    <string name="gallery_image_max_size_tip">你最多只能选择%1$d张照片</string>
+    <string name="gallery_loading_view_click_loading_more">加载更多</string>
+    <string name="gallery_loading_view_loading">加载中…</string>
+    <string name="gallery_loading_view_no_more">没有更多了</string>
+    <string name="gallery_media_grid_image_title">图片</string>
+    <string name="gallery_media_grid_video_title">视频</string>
+    <string name="gallery_over_button_text">完成</string>
+    <string name="gallery_over_button_text_checked">完成(%1$d/%2$d)</string>
+    <string name="gallery_page_title">%1$d/%2$d</string>
+    <string name="gallery_preview_title">预览</string>
+    <string name="gallery_take_image">拍摄照片</string>
+    <string name="gallery_video">录制视频</string>
+    <string name="gif_tag">动图</string>
+    <string name="goto_setting">去设置</string>
+    <string name="group_label_1">"群发所有群
+(只发通讯录群)"</string>
+    <string name="group_label_2">"群发部分群
+(选中的群发送)"</string>
+    <string name="group_label_3">"屏蔽部分群
+(选中的群不发送)"</string>
+    <string name="hang_up_finsh">松开 结束</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="known">知道了</string>
+    <string name="log_in_to_another_account">登录其他账号</string>
+    <string name="login_now">马上登录</string>
+    <string name="long_click_record">长按 录音</string>
+    <string name="message_max_num">"Sorry, you can't add more."</string>
+    <string name="move_up_to_cancel">手指上滑 , 取消录音</string>
+    <string name="mq_address">地址</string>
+    <string name="mq_age">年龄</string>
+    <string name="mq_all_image">所有图片</string>
+    <string name="mq_allocate_agent">正在分配客服...</string>
+    <string name="mq_allocate_agent_tip">正在为您分配客服，请稍后重发</string>
+    <string name="mq_allocate_queue_tip">正在排队，请等待客服接入后发送消息</string>
+    <string name="mq_allocate_queue_title">排队等待中...</string>
+    <string name="mq_already_feedback">已反馈</string>
+    <string name="mq_at_least_one_contact">至少填写一种联系方式</string>
+    <string name="mq_audio_status_normal">按住说话</string>
+    <string name="mq_audio_status_recording">手指上滑，取消发送</string>
+    <string name="mq_audio_status_want_cancel">松开手指，取消发送</string>
+    <string name="mq_auth_code">验证码</string>
+    <string name="mq_back" />
+    <string name="mq_blacklist_tips">对不起，当前客服系统暂时无法使用</string>
+    <string name="mq_camera_or_storage_no_permission">当前没有相机权限 或者 媒体访问权限</string>
+    <string name="mq_cancel">取消</string>
+    <string name="mq_choose">选择</string>
+    <string name="mq_choose_ticket_category">选择分类</string>
+    <string name="mq_comment">备注</string>
+    <string name="mq_confirm">确定</string>
+    <string name="mq_contact">联系人</string>
+    <string name="mq_contains_sensitive_words">！消息包含不规范用语</string>
+    <string name="mq_copy_success">复制成功</string>
+    <string name="mq_data_is_loading">数据加载中...</string>
+    <string name="mq_dialog_select_camera">相机</string>
+    <string name="mq_dialog_select_gallery">图库</string>
+    <string name="mq_dialog_select_title">请选择图片来源：</string>
+    <string name="mq_direct_content">接下来由 %1$s 为你服务</string>
+    <string name="mq_download_audio_failure">下载录音失败!</string>
+    <string name="mq_download_complete">下载完成</string>
+    <string name="mq_download_error">下载文件失败</string>
+    <string name="mq_downloading">下载中 …</string>
+    <string name="mq_email">邮箱</string>
+    <string name="mq_email_hint">请输入你的邮箱</string>
+    <string name="mq_error_auth_code_wrong">验证码错误或者已过期</string>
+    <string name="mq_error_submit_form">提交表单失败,请稍后再试</string>
+    <string name="mq_evaluate_bad">差评</string>
+    <string name="mq_evaluate_failure">评价失败</string>
+    <string name="mq_evaluate_good">好评</string>
+    <string name="mq_evaluate_hint">填写评价内容 (选填)</string>
+    <string name="mq_evaluate_medium">中评</string>
+    <string name="mq_evaluate_result_prefix">你给出了  </string>
+    <string name="mq_evaluate_title">你对本次服务满意吗？</string>
+    <string name="mq_expire_after">%1$s 小时后过期</string>
+    <string name="mq_expired">已过期</string>
+    <string name="mq_expired_top_tip">文件已过期，无法下载</string>
+    <string name="mq_gender">性别</string>
+    <string name="mq_hint_input">输入</string>
+    <string name="mq_input_hint">请输入...</string>
+    <string name="mq_inquire_gender_choice">[男,女]</string>
+    <string name="mq_item_clue_card_input">请输入 %s</string>
+    <string name="mq_item_clue_card_select">请选择 %s</string>
+    <string name="mq_leave_msg">留言</string>
+    <string name="mq_leave_msg_hint">请输入你的留言</string>
+    <string name="mq_leave_msg_tips">"抱歉，现在没有客服人员在线
+你可以继续写下你的问题，我们会尽快回复"</string>
+    <string name="mq_manual_redirect_tip">您的问题如果需要人工支持，可以</string>
+    <string name="mq_name">姓名</string>
+    <string name="mq_name_hint">请输入你的姓名</string>
+    <string name="mq_no_agent_leave_msg_tip">抱歉，当前没有客服在线，你可以给我们</string>
+    <string name="mq_no_app_open_file">当前没有应用打开此文件</string>
+    <string name="mq_no_sdcard">SD卡不存在</string>
+    <string name="mq_param_not_allow_empty">%1$s 不能为空</string>
+    <string name="mq_permission_denied_tip">您拒绝了咨询客服所需要的相关权限!</string>
+    <string name="mq_phone">手机</string>
+    <string name="mq_phone_hint">请输入你的手机</string>
+    <string name="mq_photo_not_support">当前设备不支持发送图片</string>
+    <string name="mq_qq">QQ</string>
+    <string name="mq_qq_hint">请输入你的QQ</string>
+    <string name="mq_queue_leave_msg">你前面还有 %1$s 个访客</string>
+    <string name="mq_recall_msg">客服撤回了一条消息</string>
+    <string name="mq_record_record_time_is_short">录音时间太短</string>
+    <string name="mq_recorder_no_permission">没有录音权限!</string>
+    <string name="mq_recorder_remaining_time">还可以说 %1$s 秒</string>
+    <string name="mq_redirect_human">转人工</string>
+    <string name="mq_robot_menu_tip">点击问题或回复对应数字查看答案</string>
+    <string name="mq_runtime_permission_tip">"咨询客服需要以下权限:
+
+1.访问设备上的照片
+2.录制音频"</string>
+    <string name="mq_save_img_failure">保存图片失败，再试试?</string>
+    <string name="mq_save_img_success_folder">图片已保存至 %s 文件夹</string>
+    <string name="mq_sdcard_no_permission">当前没有媒体访问权限</string>
+    <string name="mq_send">发送</string>
+    <string name="mq_send_msg">发送消息</string>
+    <string name="mq_send_robot_msg_time_limit_tip">您发送的太快啦，请休息一下吧</string>
+    <string name="mq_submit">提交</string>
+    <string name="mq_submit_leave_msg_success">留言提交成功</string>
+    <string name="mq_submit_success">提交成功</string>
+    <string name="mq_take_picture">拍摄照片</string>
+    <string name="mq_timeline_today">今天</string>
+    <string name="mq_timeline_yesterday">昨天</string>
+    <string name="mq_tip_required_before_submit">红色文字的地方为必填项,请填写完整</string>
+    <string name="mq_title_collect_info">请填写以下内容</string>
+    <string name="mq_title_connect_service">服务连接中，请稍候…</string>
+    <string name="mq_title_default">在线客服</string>
+    <string name="mq_title_inputting">正在输入...</string>
+    <string name="mq_title_leave_msg">留言</string>
+    <string name="mq_title_net_not_work">网络加载失败</string>
+    <string name="mq_title_service_support">客服支持</string>
+    <string name="mq_title_submit_btn">提交</string>
+    <string name="mq_title_unknown_error">未知错误</string>
+    <string name="mq_title_webview_rich_text">图文消息</string>
+    <string name="mq_toast_photo_picker_max">最多只能选择 %1$s 张图片</string>
+    <string name="mq_unknown_msg_tip">当前 App 暂不支持该类型消息，请升级您的 App 到最新版本</string>
+    <string name="mq_useful">解决</string>
+    <string name="mq_useless">未解决</string>
+    <string name="mq_useless_redirect_tip">很抱歉您不满意机器人的回答，您可以尝试</string>
+    <string name="mq_view_photo">查看图片</string>
+    <string name="mq_wechat">微信</string>
+    <string name="mq_wechat_hint">请输入你的微信</string>
+    <string name="mq_weibo">微博</string>
+    <string name="network_unable_use">当前网络不可用，请检查网络情况</string>
+    <string name="note_uer_has_registed">账号%1$s 已存在，无需重复注册</string>
+    <string name="num_postfix">%1$s</string>
+    <string name="ok">确定</string>
+    <string name="open_member">开通会员</string>
+    <string name="open_member_btn">开通会员</string>
+    <string name="open_member_desc">您目前是非会员用户，此功能仅对会员以上用户使用，建议您充值会员!</string>
+    <string name="open_member_desc_main">"您目前是体验会员，原则上此功能仅对月会员以上用户使用，建议您充值会员!
+当然您可使用免费体验功能,只是在使用的过程中将带有微商宝贝的签名，开通会员即可去除!"</string>
+    <string name="open_member_main">温馨提示</string>
+    <string name="package_name">com.example.wx.assistant</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="pay_result_callback_msg">微信支付结果：%s</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="payment_instructions">"尊敬的微商宝贝用户：
+
+         您不可以将您的微商宝贝账户有偿或无偿提供给任何第三人，并允许他通过您的账户使用非他付费购买的收费功能。为尽量避免此情形的发生，微商宝贝将对您的微商宝贝账户进行如下限制：若同一个账户仅能在当前购买会员的设备上进行使用。
+
+         欢迎您使用微商宝贝收费功能服务。微商宝贝提供的网络服务采用收费与免费结合的方式。您须先成为微商宝贝普通注册用户之后，才能继续进行购买服务。通过购买程序支付费用后，您就可以轻松享受微商宝贝收费功能服务。在开始购买程序之前，请您首先同意并接受以下服务条款。
+
+       【注意】微商宝贝有责任提醒您，请仔细阅读以下全部内容，如果您不同意本服务协议的任一或全部条款内容，请不要以确认的形式（包括但不限于：点击）进行下一步操作或使用本协议项下服务。当您确认接受本服务协议或开始使用本协议项下微商宝贝服务时，即表示用户与微商宝贝（承德蓝狐网络科技有限公司）已达成协议关系，并自愿接受并遵守微商宝贝服务的所有服务协议及相关之子协议、管理规范等。
+
+ 一、协议条款的确认和接受
+
+ 1.1、在您决定购买相关收费功能之前，请仔细阅读本收费协议条款。您必须在完全同意以下条款的前提下，才能进行购买程序。微商宝贝将根据以下收费协议条款为您提供收费服务。您在享受微商宝贝收费服务时必须完全、严格遵守本收费协议条款。
+
+ 1.2、微商宝贝根据互联网的发展和中华人民共和国有关法律、法规的变化，不断地完善服务质量并依此修改服务条款。微商宝贝有权就本协议随时更新，且毋须另行通知。您的权利以及义务的表述、购买程序及收费标准，均以最新的服务条款为准。您如果不同意该条款的修改并不影响已发生责任及义务的承担；如果您在条款变更后继续访问或使用微商宝贝，则视为您已经接受对本协议的修改。
+
+ 1.3、您在进行注册程序及缴费程序过程中点击我同意按钮即表示您已仔细阅读并完全接受本收费协议下的全部条款。只有您根据提示确认其愿意支付相关费用，并通过本协议约定方式中的一种方式支付费用后，您才能使用该收费功能。如您拒绝支付该等费用，则不能使用相关的服务功能。
+
+ 1.4、对于未明确授权给您的收费功能及其他服务的权利、收益由微商宝贝或相关权利人所有。
+
+ 1.5、您一旦购买微商宝贝提供的收费服务，即视为您是符合中华人民共和国法律规定的具有完全民事权利能力和完全民事行为能力及能够独立承担民事责任的自然人，并了解及完全同意本网站的《使用协议》及本收费协议的各项内容，以及微商宝贝对《使用协议》及本协议随时所做的任何修改。
+
+ 1.6、本收费协议中未约定事项以《使用协议》中的约定为准。
+
+ 二、风险及责任
+
+ 2.1、您须对其自身在使用微商宝贝所提供的服务时的一切行为、行动（不论是否故意）负全部责任。
+
+ 2.2、您应自行负责妥善且正确地保管、使用、维护其在微商宝贝申请取得的账户及账户密码。您应对其账户密码采取必要和有效的保密措施。非微商宝贝原因致使您账户密码泄漏以及因您保管、使用、维护不当造成损失的，微商宝贝无须承担与此有关的任何责任。
+
+ 2.3、您明确了解并同意，本协议第5.2条款约定的付费方式为代收费运营商托收的付款方式，您通过此种付费方式付费可能存在一定的商业风险（包括但不限于不法分子利用您账户或银行卡等有价卡等进行违法活动），该等风险均会给您造成相应的经济损失。为此，您同意微商宝贝在充分履行其在本协议项下全部义务及勤勉谨慎义务的前提下不对您的前述风险和损失承担任何责任；并且，微商宝贝不承担向不法分子追究侵权责任或者代其向您承担损失的任何责任和义务。
+
+ 2.4、您对本服务条款及修改有任何异议，可自动放弃其资格，但不退还任何已缴纳的收费功能费用。
+
+ 三、收费标准
+
+ 3.1、一旦您购买了微商宝贝的任何收费功能，即视为您认可该项服务标明之价格；您购买成功后，该项服务即时生效。
+
+ 3.2、收费费用标准：具体每项服务的收费标准以功能旁边的具体标价为准
+ 四、购买步骤
+
+ 4.1、对于具体购买操作步骤，微商宝贝会在相关页面上做每一步的明确提示。
+
+ 4.2、费用支付：收费功能费用将在您点击购买之日按照收费功能上的标示价格通过微商宝贝、支付宝、微信支付、等第三方代收费的方式支付。
+
+ 4.3、一旦您在微商宝贝购买收费功能成功后，则微商宝贝将即时收取该收费功能的费用，并不提供退费服务。
+
+ 五、服务周期及服务权限
+
+ 5.1、每一个收费功能都有自己单独的服务周期，您一旦购买这个收费功能即视为认可它的服务周期。
+
+ 具体服务周期如下：
+
+ 5.1.1、月度会员：自购买之日起，连续30天内可使用，30天后会员到期，到期后将不再提供会员服务，您可以选择付费再次购买会员服务。
+
+ 5.1.2、年度会员：自购买之日起，连续一年内可使用，一年后会员到期，到期后将不再提供会员服务，您可以选择付费再次购买会员服务。
+
+ 5.1.3、三年会员：自购买之日起，连续三年内可使用，三年后无偿使用，不需要再次购买会员服务。
+
+ 5.2、每一个收费功能的服务周期以功能旁边的标注期限为准。如您未在有效时间内使用已购买的服务功能，视为您已全部使用，微商宝贝概不退款。
+
+ 5.3、您功能使用权限：您的服务周期不会因其在使用期间对没有使用或者使用时间较短等情况而延长。
+
+ 六、消费明细查询
+
+ 6.1、您可通过登录微商宝贝，进入我的订单项下，免费查询其消费的服务功能的详情（包括其购买的服务功能名称、购买时间、标示价格、即时服务状态等）。
+
+ 七、用户权利限制
+
+ 7.1、对于您购买的收费功能，您只可以私人使用，不得用于商业、盈利等用途。
+
+ 7.2、您同意不会采用收费或免费的方式，全部或部分地在任何公开场合展示您购买的收费功能，除非您的上述行为不会构成侵权。
+
+ 7.3、当您购买、使用收费功能时，禁止有下列情况发生：
+
+ 7.3.1、用非法的方式或为了非法的目的使用已购买的收费功能；
+
+ 7.3.2、将您的微商宝贝账户有偿或无偿提供给任何第三人，并允许他通过您的账户使用非他付费购买的收费功能。为尽量避免前述情形的发生，微商宝贝将对您的微商宝贝账户进行如下限制：若同一个账户仅能在当前购买会员的设备上进行使用。
+
+ 7.3.3、将收费功能复制、销售、出租或授权给任何第三方。
+
+ 7.3.4、主动对微商宝贝用于保护其收费功能的任何安全措施技术进行攻克、反向操作、更改、破坏或其他篡改，或协助他人进行上述行为。
+
+ 7.3.5、通过非微商宝贝认可的方式获得收费许可功能，或者删除收费功能上的任何所有权声明或标签。
+
+ 7.4、您不得通过微商宝贝的任何服务直接或间接地从事以下违反国家法律法规及社会公序良俗之道德保留之行为：
+
+ • 违反宪法确定的基本原则的；
+
+ • 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
+
+ • 损害国家荣誉和利益的；
+
+ • 煽动民族仇恨、民族歧视，破坏民族团结的；
+
+ • 破坏国家宗教政策，宣扬邪教和封建迷信的；
+
+ • 散布谣言，扰乱社会秩序，破坏社会稳定的；
+
+ • 散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪的；
+
+ • 侮辱或者诽谤他人，侵害他人合法权益的；
+
+ • 煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；
+
+ • 以非法民间组织名义活动的；
+
+ • 含有法律、行政法规禁止的其他内容的。
+
+ • 微商宝贝有权对您就使用服务之行为进行不定期监督，一旦发现涉及上述之行为，微商宝贝有权收回您对服务的使用权而不对您作出任何的赔偿。而且，微商宝贝将依法向国家机关就您之行为进行举报并保留进一步追究您的行为而导致微商宝贝损失之权利。
+
+ 8.1、微商宝贝对收费功能的服务周期、购买价格保留随时变更的权利，而不需通知您。对于所有服务的中断或终止而造成的任何损失，微商宝贝无需对您或任何第三方承担任何责任。
+
+ 8.2、鉴于网络服务的特殊性，您同意微商宝贝有权随时变更、中断或终止部分或全部的网络服务。微商宝贝保留随时修改或中断服务而不需通知您的权利，对于所有服务的中断或终止而造成的任何损失，微商宝贝无需对您或任何第三方承担任何责任。
+
+ 8.3、对于因服务器的死机、网络的故障、数据库故障、软件升级、服务器维修、调整、升级等问题，或其他不可抗拒的事由，包括但不限于政府行为、自然灾害、黑客攻击等造成的服务中断和对您个人数据及资料造成的损失，微商宝贝不承担由此对您造成的任何损失或退还任何已缴纳的收费服务费用。但微商宝贝应尽可能事先进行通告。
+
+ 8.4、您购买的服务功能使用期限中包含解决故障、服务器维修、调整、升级等所需用的合理时间，对上述情况所需用的时间微商宝贝不予补偿。
+
+ 8.5、微商宝贝对任何直接、间接、偶然、特殊及继起的损害不负责任，不予赔偿。
+
+ 8.6、您在使用微商宝贝所提供的服务时，如遭受任何人身或财务的损失、损害或伤害，不论原因如何，微商宝贝均不负责任。由于您将个人密码告知他人或与他人共享注册帐户，由此导致的任何个人资料泄露，本网站不负任何责任。
+
+ 九、中断及终止服务
+
+ 9.1、在某些罕见情况下，由于权利授权问题可能致使微商宝贝上某些收费功能无法使用。在这种情况下，微商宝贝不能给您退费，可以根据不同情况用节目替换方式给您补偿。
+
+ 9.2、如您违反本服务条款中的内容，微商宝贝有权在不通知您的情况下立即终止您已购买的所有服务，以及取消您的微商宝贝账户和使用权限，但不退还任何已缴纳的收费服务费用。
+
+ 十、隐私权政策
+
+ 微商宝贝非常重视用户个人信息的保护，在您使用微商宝贝提供的服务时，您同意微商宝贝按照在微商宝贝平台上公布的隐私权政策收集、存储、使用、披露和保护您的个人信息。微商宝贝希望通过隐私权政策向您清楚地介绍微商宝贝对您个人信息的处理方式，因此微商宝贝建议您完整地阅读隐私权政策，以帮助您更好地保护您的隐私权。
+
+ 详细个人信息政策请阅 《微商宝贝用户服务协议》如您不同意请不要开通或停止使用本服务。
+
+"</string>
+    <string name="permission_denied">权限被拒绝</string>
+    <string name="phone_sign_up">手机号注册</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="picture">图片</string>
+    <string name="picture_all_audio">所有音频</string>
+    <string name="picture_audio">获取系统录音权限被拒绝</string>
+    <string name="picture_audio_empty">你可以使用系统录音录制音频</string>
+    <string name="picture_audio_error">音频已损坏</string>
+    <string name="picture_camera">获取系统相机权限被拒绝</string>
+    <string name="picture_camera_roll">所有照片</string>
+    <string name="picture_cancel">取消</string>
+    <string name="picture_completed">已完成</string>
+    <string name="picture_confirm">确定</string>
+    <string name="picture_done">完成</string>
+    <string name="picture_done_front_num">%1$d/%2$d 完成</string>
+    <string name="picture_empty">你可以使用相机拍摄照片或视频</string>
+    <string name="picture_empty_audio_title">"无音频文件
+"</string>
+    <string name="picture_empty_title">"无视频或照片
+"</string>
+    <string name="picture_error">图片已损坏</string>
+    <string name="picture_jurisdiction">读取内存卡权限被拒绝</string>
+    <string name="picture_long_chart">长图</string>
+    <string name="picture_message_max_num">你最多可以选择%1$s张图片</string>
+    <string name="picture_message_video_max_num">你最多可以选择%1$s个视频</string>
+    <string name="picture_min_img_num">最低选择不能少于%1$s张</string>
+    <string name="picture_min_video_num">最低选择不能少于%1$s个</string>
+    <string name="picture_pause_audio">暂停</string>
+    <string name="picture_photograph">拍照</string>
+    <string name="picture_play_audio">播放</string>
+    <string name="picture_please">请稍候...</string>
+    <string name="picture_please_select">请选择</string>
+    <string name="picture_preview">预览</string>
+    <string name="picture_prompt">提示</string>
+    <string name="picture_prompt_content">是否保存图片至手机？</string>
+    <string name="picture_quit_audio">退出</string>
+    <string name="picture_record_video">录视频</string>
+    <string name="picture_rule">不能同时选择图片或视频</string>
+    <string name="picture_save_error">图片保存失败</string>
+    <string name="picture_save_success">图片保存成功至</string>
+    <string name="picture_stop_audio">停止</string>
+    <string name="picture_take_picture">拍摄</string>
+    <string name="picture_tape">录音</string>
+    <string name="picture_video_error">视频已损坏</string>
+    <string name="picture_video_toast">视频不可预览</string>
+    <string name="picture_warning">暂无媒体文件！</string>
+    <string name="preview">预览</string>
+    <string name="preview_num">预览(%1$d)</string>
+    <string name="protocol_str_new">"1、仅在浏览时，我们可能会申请系统设备权限收集设备信息、日志信息、用于信息推送和安全风控，并申请存储权限，用于下载及缓存相关文件。
+
+ 2、使用功能时，我们可能会申请悬浮窗权限，用于使用“开始”“返回”“结束”按钮，以及功能使用结束后，向您展示弹窗文字提示信息。
+
+ 3、我们会根据您使用服务的具体功能的需要，在应用运行时收集您的电话号码、通讯录等必要的个人信息。您有权拒绝提供这些信息，但这将导致您无法使用相关特定功能。
+
+ 4、我们尊重您的选择权，您可以访问、更正、删除您的个人信息并管理您的授权，我们也将为您提供注销渠道。
+
+ 5、上述权限以及麦克风、相册、存储空间等敏感信息均不会默认或强制开启收集信息
+"</string>
+    <string name="ratio_forever_membership">40%</string>
+    <string name="ratio_monthly_membership">10%</string>
+    <string name="ratio_non_membership">5%</string>
+    <string name="ratio_three_year_membership">30%</string>
+    <string name="ratio_year_half_membership">20%</string>
+    <string name="ratio_year_membership">30%</string>
+    <string name="ratio_zero_membership">0%</string>
+    <string name="recoding_fail">录音失败 , 请再试一次！</string>
+    <string name="release_cancel">松开 取消</string>
+    <string name="release_to_cancel">松开手指 , 取消录音</string>
+    <string name="save_photos_to_album">保存图片到相册</string>
+    <string name="saved_to_album">已保存到相册</string>
+    <string name="search_menu_title">Search</string>
+    <string name="select_photos_videos">从相册选择图片</string>
+    <string name="send_intimate_desc">"例如：好友备注是\"马总\",则发送的效果:\"马总，...\"，未备注的好友不添加该前缀。
+如选择\"特殊格式\"，只有备注\"xxx@xxx\"格式的好友才会发送前缀，如\"马云@马总\"，发送的效果:\"马总，...\""</string>
+    <string name="sign_up">注册</string>
+    <string name="srl_component_falsify" formatted="false">"%s falsify area,
+ Represents the height[%.1fdp] of drag at run time,
+ It does not show anything."</string>
+    <string name="srl_content_empty">The content view in SmartRefreshLayout is empty. Do you forget to add it in xml layout file?</string>
+    <string name="srl_footer_failed">Load Failed</string>
+    <string name="srl_footer_finish">Load Success</string>
+    <string name="srl_footer_loading">Loading…</string>
+    <string name="srl_footer_nothing">No More Data</string>
+    <string name="srl_footer_pulling">Pull Up To Load More</string>
+    <string name="srl_footer_refreshing">Wait For Refreshing…</string>
+    <string name="srl_footer_release">Release To Load More</string>
+    <string name="srl_header_failed">Refresh Failed</string>
+    <string name="srl_header_finish">Refresh Success</string>
+    <string name="srl_header_loading">Loading…</string>
+    <string name="srl_header_pulling">Pull Down To Refresh</string>
+    <string name="srl_header_refreshing">Wait For Loading…</string>
+    <string name="srl_header_release">Release To Refresh</string>
+    <string name="srl_header_secondary">Release To Second Floor</string>
+    <string name="srl_header_update">"'Last Update' M-d HH:mm"</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="take_picture">选择图片</string>
+    <string name="take_picture_video">图片/视频</string>
+    <string name="time_too_short">录音时间过短</string>
+    <string name="ucrop_error_input_data_is_absent">Both input and output Uri must be specified</string>
+    <string name="ucrop_label_edit_photo">Edit Photo</string>
+    <string name="ucrop_label_original">Original</string>
+    <string name="ucrop_menu_crop">Crop</string>
+    <string name="ucrop_mutate_exception_hint">Therefore, override color resource (ucrop_color_toolbar_widget) in your app to make it work on pre-L devices</string>
+    <string name="umeng_example_home_btn_plus">社交分享</string>
+    <string name="umeng_socialize_cancel_btn_str">取消</string>
+    <string name="umeng_socialize_content_hint">说点啥…</string>
+    <string name="umeng_socialize_send_btn_str">发送</string>
+    <string name="umeng_socialize_share">分享</string>
+    <string name="umeng_socialize_sina">新浪</string>
+    <string name="umeng_socialize_text_add_custom_platform">请配置用户平台</string>
+    <string name="umeng_socialize_text_more_key">更多</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_qq_zone_key">QQ空间</string>
+    <string name="umeng_socialize_text_sina_key">微博</string>
+    <string name="umeng_socialize_text_tencent_key">腾讯微博</string>
+    <string name="umeng_socialize_text_waitting_share">分享中…</string>
+    <string name="umeng_socialize_text_weixin_circle_key">微信朋友圈</string>
+    <string name="umeng_socialize_text_weixin_fav_key">微信收藏</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_wenxin_fav">微信收藏</string>
+    <string name="un_camera_merpermission_desc">获取摄像头权限被关闭，请开启权限</string>
+    <string name="un_contacts_merpermission_desc">获取联系人权限被关闭，请开启权限</string>
+    <string name="un_external_storage_merpermission_desc">获取数据存储权限被关闭，请开启权限</string>
+    <string name="un_permission_desc">"%1$s 
+
+设置路径: 设置->应用->微商宝贝->权限"</string>
+    <string name="un_record_audio_merpermission_desc">获取录音权限被关闭，请开启权限</string>
+    <string name="up_for_cancel">手指上滑，取消发送</string>
+    <string name="update">更新</string>
+    <string name="use">OK</string>
+    <string name="version_is_latest">您使用的已经是最新版本了!</string>
+    <string name="version_name_v">版本号 V%1$s</string>
+    <string name="version_update">检查更新</string>
+    <string name="videos">视频</string>
+    <string name="voice_label_1">我的录音</string>
+    <string name="voice_label_2">微信录音</string>
+    <string name="voice_label_3">我的收藏</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="wx_versioin_str">"当前支持微信版本
+
+由于微信的每个版本都有差别，导致我们的APP无法通用所有的微信版本，必须经过版本适配才能使用。
+
+请安装我们APP支持的微信版本，建议微信发布的新版本不要急着升级，等我们适配支持后在升级。
+
+微商宝贝会尽可能第一时间匹配当前最新的微信版本。
+
+如果微商宝贝有新版本，一定要更新！一定要更新！一定要更新！重要的事情说三遍，这样能保证微商宝贝可以在微信上正常使用。
+
+当前支持微信版本：7.0.14、7.0.13、7.0.12、7.0.11、7.0.10、7.0.9、7.0.8、7.0.7、7.0.6、7.0.5、7.0.4、7.0.3、7.0.0、6.7.3
+"</string>
+</resources>

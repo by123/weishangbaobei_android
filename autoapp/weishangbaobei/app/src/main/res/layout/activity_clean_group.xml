@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_bar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <worker8.com.github.radiogroupplus.RadioGroupPlus android:orientation="vertical" android:id="@id/radioGroupPlus" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radioLayout1" android:paddingLeft="@dimen/sp_13" android:paddingRight="@dimen/dp_13" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60">
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_333333" android:tag="0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="退出所有的群" android:layout_weight="1.0" />
+                    <RadioButton android:id="@id/radioBtn01" android:background="@drawable/selector_radio_bg" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:button="@null" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radioLayout2" android:paddingLeft="@dimen/sp_15" android:paddingRight="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60">
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_333333" android:tag="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="保留通讯录群" android:layout_weight="1.0" />
+                    <RadioButton android:id="@id/radioBtn02" android:background="@drawable/selector_radio_bg" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:button="@null" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radioLayout3" android:paddingLeft="@dimen/sp_15" android:paddingRight="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60">
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_333333" android:tag="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="保留自建群" android:layout_weight="1.0" />
+                    <RadioButton android:id="@id/radioBtn03" android:background="@drawable/selector_radio_bg" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:button="@null" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radioLayout4" android:paddingLeft="@dimen/sp_15" android:paddingRight="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60">
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_333333" android:tag="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="保留通讯录群和自建群" android:layout_weight="1.0" />
+                    <RadioButton android:id="@id/radioBtn04" android:background="@drawable/selector_radio_bg" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:button="@null" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radioLayout5" android:paddingLeft="@dimen/sp_15" android:paddingRight="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60">
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/color_333333" android:tag="3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="退出指定条件下的群" android:layout_weight="1.0" />
+                    <RadioButton android:id="@id/radioBtn05" android:background="@drawable/selector_radio_bg" android:layout_width="@dimen/dp_23" android:layout_height="@dimen/dp_23" android:button="@null" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/jump_label_layout" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" android:minHeight="@dimen/dp_40">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_999999" android:gravity="center_vertical" android:id="@id/jump_label" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:src="@mipmap/function_right_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/divider_line" />
+            </worker8.com.github.radiogroupplus.RadioGroupPlus>
+            <include layout="@layout/nav_start_wx_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

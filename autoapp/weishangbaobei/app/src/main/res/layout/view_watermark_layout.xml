@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bar_main" android:background="@color/watermarkBarBackground" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <CheckBox android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/bar_item_img_mk" android:paddingTop="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="图片水印" android:drawableTop="@drawable/selector_bar_image" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+        <CheckBox android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/bar_item_text_mk" android:paddingTop="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="文字水印" android:drawableTop="@drawable/selector_bar_text" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+        <CheckBox android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/bar_item_paint" android:paddingTop="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="画笔" android:drawableTop="@drawable/selector_bar_paint" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+        <CheckBox android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/bar_item_mosaic" android:paddingTop="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="马赛克" android:drawableTop="@drawable/selector_bar_mosaic" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/bar_edit" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginBottom="60.0dip">
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.ImagePopup android:id="@id/bar_edit_img_mk" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true" />
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.TextPopup android:id="@id/bar_edit_text_mk" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true" />
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.PaintPopup android:id="@id/bar_edit_paint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_alignParentBottom="true" />
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.MosaicPopup android:id="@id/bar_edit_mosaic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

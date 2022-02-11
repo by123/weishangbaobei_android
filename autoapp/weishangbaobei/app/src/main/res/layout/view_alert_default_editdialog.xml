@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lLayout_bg" android:background="@drawable/alertdialog_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_280"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_25" android:paddingTop="@dimen/dp_25" android:paddingBottom="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="#ff333333" android:gravity="left" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_15" android:text="请输入爆粉码" android:textAllCaps="false" />
+        <EditText android:textSize="16.0dip" android:textColor="@color/black" android:gravity="left" android:id="@id/edit_Text" android:background="@drawable/alert_dialog_edit_input_bg" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="@dimen/dp_120" android:layout_marginRight="@dimen/dp_25" android:text="" android:hint="设置打招呼的信息，提高对方加你的成功率（最多支持45个字符）" android:maxLength="45" android:lineSpacingExtra="2.0dip" android:textCursorDrawable="@drawable/ed_color" android:textAllCaps="false" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20">
+            <TextView android:layout_width="@dimen/dp_0" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/dp_15" android:textStyle="normal" android:textColor="#ff333333" android:gravity="center" android:id="@id/btn_cancel" android:background="@null" android:clickable="true" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_45" android:text="取消" android:textAllCaps="false" />
+            <Button android:textSize="@dimen/dp_15" android:textStyle="normal" android:textColor="#ff244ea4" android:gravity="center" android:id="@id/btn_pos" android:background="@null" android:clickable="true" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_45" android:layout_marginRight="@dimen/dp_6" android:text="确定" android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

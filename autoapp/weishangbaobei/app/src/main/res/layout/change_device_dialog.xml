@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lLayout_bg" android:background="@drawable/alertdialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#00000000" android:paddingLeft="@dimen/dp_25" android:paddingTop="@dimen/dp_20" android:paddingRight="@dimen/dp_25" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:textAllCaps="false" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="left" android:id="@id/txt_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="就哦大家哦手机佛的世界佛ID设计佛都是金佛山低价哦就佛第三届佛山就哦大家佛山剪短发" android:singleLine="false" android:lineSpacingExtra="4.0dip" android:textAllCaps="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="normal" android:textColor="#ff545454" android:gravity="right" android:background="@drawable/alertdialog_left_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0" android:textAllCaps="false" />
+        <TextView android:textSize="@dimen/dp_15" android:textStyle="normal" android:gravity="center" android:id="@id/open_member" android:background="@drawable/alertdialog_left_selector" android:clickable="true" android:layout_width="@dimen/dp_80" android:layout_height="fill_parent" android:text="" android:textAllCaps="false" />
+        <TextView android:textSize="@dimen/dp_15" android:textStyle="normal" android:gravity="center" android:id="@id/btn_neg" android:background="@drawable/alertdialog_left_selector" android:clickable="true" android:layout_width="@dimen/dp_80" android:layout_height="fill_parent" android:text="" android:textAllCaps="false" />
+        <TextView android:textSize="@dimen/dp_15" android:textStyle="normal" android:gravity="center" android:id="@id/btn_pos" android:background="@drawable/alertdialog_right_selector" android:paddingRight="@dimen/dp_30" android:clickable="true" android:layout_width="@dimen/dp_110" android:layout_height="50.0dip" android:text="" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

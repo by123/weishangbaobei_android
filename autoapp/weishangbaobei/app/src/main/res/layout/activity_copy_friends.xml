@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_bar" />
+    <include layout="@layout/divider_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:textSize="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="为了避免加人频繁，一次最多可选30人。" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_14" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已选" />
+            <TextView android:textSize="@dimen/dp_15" android:textColor="@color/main_color" android:id="@id/selectPeopleNum" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="@dimen/dp_14" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人" />
+            <CheckBox android:id="@id/ck_all" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_seekbar" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ListView android:id="@id/contact_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:layout_weight="1.0" />
+    <com.wx.assistants.view.FriendsMoveBottomLayout android:id="@id/friendsMoveBottomLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

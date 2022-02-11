@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_72"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pic_iv" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_72" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/addProductImg" android:background="@drawable/main_input_rect_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@mipmap/tupianjia" />
+        <TextView android:textSize="@dimen/dp_11" android:textColor="#ffb8b7b7" android:gravity="center" android:layout_gravity="center" android:id="@id/addPicVideoText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="添加图片" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right|top" android:layout_gravity="center|right|top" android:id="@id/cleanImage" android:visibility="gone" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginRight="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_3">
+        <ImageView android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@mipmap/function_delete_pic" />
+    </LinearLayout>
+</FrameLayout>

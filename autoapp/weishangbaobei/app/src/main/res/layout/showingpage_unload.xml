@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/loadingImg" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/lottery_animlist" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/dp_15" android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 正在加载中..." />
+</LinearLayout>

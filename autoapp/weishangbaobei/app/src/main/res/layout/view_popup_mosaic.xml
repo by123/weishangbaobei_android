@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/watermarkBarBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="线条粗细" />
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/layout_mosaic_edit_size" android:background="@drawable/drawable_select_size_line" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+        <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+    </RadioGroup>
+</LinearLayout>

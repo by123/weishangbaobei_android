@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_5">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_35">
+            <ImageView android:background="@mipmap/function_user" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_2" android:layout_marginRight="@dimen/dp_12" />
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_gravity="left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_5" android:text="发送给谁" />
+        </LinearLayout>
+        <RadioGroup android:gravity="center|right" android:orientation="horizontal" android:id="@id/circulateRG" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30">
+            <RadioButton android:textSize="@dimen/dp_14" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/circulateRB1" android:background="@drawable/radiobutton_rect_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:checked="true" android:button="@null" android:text="全部客户" android:layout_weight="1.0" />
+            <RadioButton android:textSize="@dimen/dp_14" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/circulateRB2" android:background="@drawable/radiobutton_rect_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:layout_marginLeft="13.0dip" android:button="@null" android:text="部分客户" android:layout_weight="1.0" />
+            <RadioButton android:textSize="@dimen/dp_14" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/circulateRB3" android:background="@drawable/radiobutton_rect_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_14" android:button="@null" android:text="不发给谁" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" layout="@layout/main_set_start" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_30" android:layout_marginRight="@dimen/dp_5" layout="@layout/main_set_tag" />
+</LinearLayout>

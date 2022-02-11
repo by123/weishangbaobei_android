@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlAccentColor="@android:color/white" app:srlEnableHeaderTranslationContent="true" app:srlEnableLoadMore="false" app:srlPrimaryColor="@color/refresh_color">
+            <com.scwang.smartrefresh.header.BezierCircleHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.wx.assistants.view.CustomScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" />
+                    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dp_48">
+                        <Button android:textSize="@dimen/dp_18" android:textColor="@color/black" android:layout_gravity="center|left" android:id="@id/navTitle" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="30.0dip" android:text="微商宝贝" />
+                        <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/navRightLayout" android:visibility="visible" android:layout_width="@dimen/dp_60" android:layout_height="fill_parent">
+                            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:gravity="center|right" android:paddingRight="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="帮助" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <www.linwg.org.lib.LCardView android:layout_gravity="center_vertical" android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cornerRadius="@dimen/dp_10" app:shadowColor="@color/card_bg_color_block" app:shadowFluidShape="linear" app:shadowSize="@dimen/dp_13" app:shadowStartAlpha="20">
+                        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/banner" android:layout_width="@dimen/dp_340" android:layout_height="@dimen/dp_155" />
+                    </www.linwg.org.lib.LCardView>
+                    <LinearLayout android:orientation="vertical" android:id="@id/outCommonUse" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <android.support.v7.widget.RecyclerView android:id="@id/commonRV" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" />
+                    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+                            <TextView android:textColor="@color/orange" android:gravity="center_vertical" android:background="@mipmap/home_item_broadcast" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginLeft="@dimen/dp_15" />
+                            <TextView android:textSize="@dimen/dp_13" android:textColor="@color/color_333333" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/broad" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_10" android:text="" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+                        </LinearLayout>
+                        <TextView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/renmaiLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+                                <Button android:textSize="@dimen/dp_16" android:textColor="@color/color_36333F" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_5" android:text="精选人脉" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <android.support.v7.widget.RecyclerView android:id="@id/renmaiRV" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </RelativeLayout>
+                            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_65" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_5">
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/changeGroupLayout" android:background="@mipmap/home_item_change_group_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_7" android:layout_weight="1.0" android:alpha="0.9">
+                                    <ImageView android:background="@mipmap/home_item_change_group_bg_1" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_12" />
+                                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="换群专用" />
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/moveFriendLayout" android:background="@mipmap/home_item_remove_friend_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_7" android:layout_weight="1.0" android:alpha="0.9">
+                                    <ImageView android:background="@mipmap/home_item_remove_friend_bg_1" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45" android:layout_marginLeft="@dimen/dp_12" />
+                                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="好友迁移" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <ImageView android:id="@id/singleVDImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_66" android:layout_marginLeft="@dimen/dp_14" android:layout_marginRight="@dimen/dp_14" android:scaleType="fitXY" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/groupSendLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+                                <Button android:textSize="@dimen/dp_16" android:textColor="@color/color_36333F" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_5" android:text="高效群发" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <android.support.v7.widget.RecyclerView android:id="@id/groupSendRV" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/otherLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+                                <Button android:textSize="@dimen/dp_16" android:textColor="@color/color_36333F" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_5" android:text="转发点赞" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <android.support.v7.widget.RecyclerView android:id="@id/otherRV" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/toolLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+                                <Button android:textSize="@dimen/dp_16" android:textColor="@color/color_36333F" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_5" android:text="图片视频" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <android.support.v7.widget.RecyclerView android:id="@id/toolRV" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/cleanLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+                            <Button android:textSize="@dimen/dp_16" android:textColor="@color/color_36333F" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_5" android:text="无忧清理" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <android.support.v7.widget.RecyclerView android:id="@id/cleanRV" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/companyLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+                            <Button android:textSize="@dimen/dp_16" android:textColor="@color/color_36333F" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_5" android:text="企业微信" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <android.support.v7.widget.RecyclerView android:id="@id/companyRV" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.wx.assistants.view.CustomScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <com.wx.assistants.view.DragFloatActionButton android:layout_gravity="bottom|center|right" android:id="@id/floatBtn" android:visibility="gone" android:clickable="true" android:layout_width="78.0dip" android:layout_height="73.0dip" android:layout_marginBottom="33.0dip" />
+        <com.wx.assistants.view.HomeBottomSendLayout android:id="@id/homeBottomSendLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

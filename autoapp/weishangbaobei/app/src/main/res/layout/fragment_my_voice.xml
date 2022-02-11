@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:srlAccentColor="@android:color/white" app:srlEnableHeaderTranslationContent="true" app:srlEnableLoadMore="false" app:srlPrimaryColor="@color/refresh_color">
+            <com.scwang.smartrefresh.header.BezierCircleHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ListView android:scrollbarStyle="outsideInset" android:id="@id/listView" android:background="#ffffffff" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="@dimen/dp_0" android:overScrollMode="never" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <include layout="@layout/divider_line" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/pressLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="按住说话" />
+    </LinearLayout>
+    <com.ilike.voicerecorder.widget.VoiceRecorderView android:gravity="center" android:layout_gravity="center" android:id="@id/voice_recorder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-50.0dip" android:layout_centerInParent="true" />
+</FrameLayout>

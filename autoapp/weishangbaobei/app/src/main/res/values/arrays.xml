@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="a_picture">
+        <item>@drawable/a_pic_selector</item>
+    </array>
+    <string-array name="content_clone_type">
+        <item>纯图、纯视频、图带字、视频带字</item>
+        <item>纯图、纯视频、图带字、视频带字、纯字</item>
+        <item>纯图、图片带文字</item>
+        <item>纯视频、视频带文字</item>
+        <item>只克隆:纯文字</item>
+    </string-array>
+    <string-array name="content_like_comment_type">
+        <item>纯图、纯视频、图带字、视频带字</item>
+        <item>纯图、纯视频、图带字、视频带字、纯字</item>
+        <item>纯图、图片带文字</item>
+        <item>纯视频、视频带文字</item>
+        <item>只点赞/评论:纯文字</item>
+    </string-array>
+    <string-array name="content_template">
+        <item>你好</item>
+        <item>来自手机通讯录</item>
+        <item>朋友介绍的</item>
+        <item>东西怎么卖</item>
+        <item>加一下，想了解你的产品</item>
+        <item>换号了，加一下</item>
+        <item>在吗？</item>
+        <item>终于找到你了，通过一下！</item>
+    </string-array>
+    <array name="eight_pictures">
+        <item>@drawable/eight_pic1_selector</item>
+        <item>@drawable/eight_pic2_selector</item>
+        <item>@drawable/eight_pic3_selector</item>
+        <item>@drawable/eight_pic4_selector</item>
+        <item>@drawable/eight_pic5_selector</item>
+        <item>@drawable/eight_pic6_selector</item>
+    </array>
+    <array name="five_pictures">
+        <item>@drawable/five_pic1_selector</item>
+        <item>@drawable/five_pic2_selector</item>
+        <item>@drawable/five_pic3_selector</item>
+        <item>@drawable/five_pic4_selector</item>
+        <item>@drawable/five_pic5_selector</item>
+        <item>@drawable/five_pic6_selector</item>
+    </array>
+    <array name="four_pictures">
+        <item>@drawable/four_pic1_selector</item>
+        <item>@drawable/four_pic2_selector</item>
+        <item>@drawable/four_pic3_selector</item>
+        <item>@drawable/four_pic4_selector</item>
+        <item>@drawable/four_pic5_selector</item>
+        <item>@drawable/four_pic6_selector</item>
+    </array>
+    <array name="nine_pictures">
+        <item>@drawable/nine_pic1_selector</item>
+        <item>@drawable/nine_pic2_selector</item>
+        <item>@drawable/nine_pic3_selector</item>
+        <item>@drawable/nine_pic4_selector</item>
+    </array>
+    <string-array name="remark_template">
+        <item>客户</item>
+        <item>同行</item>
+        <item>微商</item>
+        <item>宝妈</item>
+        <item>粉丝</item>
+        <item>帅哥</item>
+        <item>美女</item>
+    </string-array>
+    <array name="seven_pictures">
+        <item>@drawable/seven_pic1_selector</item>
+        <item>@drawable/seven_pic2_selector</item>
+        <item>@drawable/seven_pic3_selector</item>
+        <item>@drawable/seven_pic4_selector</item>
+        <item>@drawable/seven_pic5_selector</item>
+        <item>@drawable/seven_pic6_selector</item>
+    </array>
+    <array name="six_pictures">
+        <item>@drawable/six_pic1_selector</item>
+        <item>@drawable/six_pic2_selector</item>
+        <item>@drawable/six_pic3_selector</item>
+        <item>@drawable/six_pic4_selector</item>
+        <item>@drawable/six_pic5_selector</item>
+        <item>@drawable/six_pic6_selector</item>
+    </array>
+    <array name="three_pictures">
+        <item>@drawable/three_pic1_selector</item>
+        <item>@drawable/three_pic2_selector</item>
+        <item>@drawable/three_pic3_selector</item>
+        <item>@drawable/three_pic4_selector</item>
+        <item>@drawable/three_pic5_selector</item>
+        <item>@drawable/three_pic6_selector</item>
+    </array>
+    <array name="two_pictures">
+        <item>@drawable/two_pic1_selector</item>
+        <item>@drawable/two_pic2_selector</item>
+        <item>@drawable/two_pic3_selector</item>
+        <item>@drawable/two_pic4_selector</item>
+        <item>@drawable/two_pic5_selector</item>
+        <item>@drawable/two_pic6_selector</item>
+    </array>
+</resources>

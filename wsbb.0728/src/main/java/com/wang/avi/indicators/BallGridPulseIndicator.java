@@ -1,0 +1,74 @@
+package com.wang.avi.indicators;
+
+import android.animation.ValueAnimator;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import com.wang.avi.Indicator;
+import com.yalantis.ucrop.view.CropImageView;
+import java.util.ArrayList;
+
+public class BallGridPulseIndicator extends Indicator {
+    public static final int ALPHA = 255;
+    public static final float SCALE = 1.0f;
+    int[] alphas = {255, 255, 255, 255, 255, 255, 255, 255, 255};
+    float[] scaleFloats = {1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f};
+
+    public void draw(Canvas canvas, Paint paint) {
+        float width = (((float) getWidth()) - 16.0f) / 6.0f;
+        float width2 = (float) (getWidth() / 2);
+        float f = 2.0f * width;
+        float f2 = f + 4.0f;
+        float width3 = (float) (getWidth() / 2);
+        int i = 0;
+        while (true) {
+            int i2 = i;
+            if (i2 < 3) {
+                for (int i3 = 0; i3 < 3; i3++) {
+                    canvas.save();
+                    float f3 = (float) i3;
+                    float f4 = (float) i2;
+                    canvas.translate((f3 * 4.0f) + (f * f3) + (width2 - f2), (f4 * 4.0f) + (f * f4) + (width3 - f2));
+                    int i4 = (i2 * 3) + i3;
+                    canvas.scale(this.scaleFloats[i4], this.scaleFloats[i4]);
+                    paint.setAlpha(this.alphas[i4]);
+                    canvas.drawCircle(CropImageView.DEFAULT_ASPECT_RATIO, CropImageView.DEFAULT_ASPECT_RATIO, width, paint);
+                    canvas.restore();
+                }
+                i = i2 + 1;
+            } else {
+                return;
+            }
+        }
+    }
+
+    public ArrayList<ValueAnimator> onCreateAnimators() {
+        ArrayList<ValueAnimator> arrayList = new ArrayList<>();
+        int[] iArr = {720, 1020, 1280, 1420, 1450, 1180, 870, 1450, 1060};
+        int[] iArr2 = {-60, 250, -170, 480, 310, 30, 460, 780, 450};
+        for (final int i = 0; i < 9; i++) {
+            ValueAnimator ofFloat = ValueAnimator.ofFloat(new float[]{1.0f, 0.5f, 1.0f});
+            ofFloat.setDuration((long) iArr[i]);
+            ofFloat.setRepeatCount(-1);
+            ofFloat.setStartDelay((long) iArr2[i]);
+            addUpdateListener(ofFloat, new ValueAnimator.AnimatorUpdateListener() {
+                public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                    BallGridPulseIndicator.this.scaleFloats[i] = ((Float) valueAnimator.getAnimatedValue()).floatValue();
+                    BallGridPulseIndicator.this.postInvalidate();
+                }
+            });
+            ValueAnimator ofInt = ValueAnimator.ofInt(new int[]{255, 210, 122, 255});
+            ofInt.setDuration((long) iArr[i]);
+            ofInt.setRepeatCount(-1);
+            ofInt.setStartDelay((long) iArr2[i]);
+            addUpdateListener(ofInt, new ValueAnimator.AnimatorUpdateListener() {
+                public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                    BallGridPulseIndicator.this.alphas[i] = ((Integer) valueAnimator.getAnimatedValue()).intValue();
+                    BallGridPulseIndicator.this.postInvalidate();
+                }
+            });
+            arrayList.add(ofFloat);
+            arrayList.add(ofInt);
+        }
+        return arrayList;
+    }
+}

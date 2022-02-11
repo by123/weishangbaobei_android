@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/navigation_bar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.wx.assistants.view.CleanZombieDNDLayout android:orientation="vertical" android:id="@id/cleanZombieDndLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sp_13" android:layout_marginRight="@dimen/sp_13" />
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" layout="@layout/divider_line_height20" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_13" android:layout_weight="1.0">
+                    <ImageView android:background="@mipmap/function_delete" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_12" />
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_15" android:text="自动删除僵尸粉" android:layout_weight="1.0" />
+                    <Switch android:gravity="right" android:id="@id/deleteSwitchBtn" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_15" android:checked="false" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_5">
+                    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_999999" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_2" android:text="若不删除，自动备注A000非好友_昵称" android:layout_weight="1.0" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" layout="@layout/divider_line_height20" />
+                <LinearLayout android:orientation="vertical" android:id="@id/shieldDeleteLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:layout_weight="1.0">
+                        <ImageView android:background="@mipmap/function_delete" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_12" />
+                        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:text="自动删除被屏蔽" android:layout_weight="1.0" />
+                        <Switch android:gravity="right" android:id="@id/deleteShieldSwitchBtn" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_15" android:checked="false" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_5">
+                        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_999999" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_2" android:text="若不删除，自动备注A000被屏蔽_昵称" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" layout="@layout/divider_line_height20" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/singleSelectLabelOutLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.wx.assistants.view.SingleLabelSelectLayout android:gravity="center_vertical" android:id="@id/singleSelectLabelLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" />
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" layout="@layout/divider_line_height20" />
+                </LinearLayout>
+                <com.wx.assistants.view.FriendSendModeLayoutZombies android:id="@id/friendSendModeLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_13" />
+                <include layout="@layout/nav_start_wx_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

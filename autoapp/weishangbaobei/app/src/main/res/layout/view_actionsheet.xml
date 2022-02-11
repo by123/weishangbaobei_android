@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_title_container" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="96.0px">
+        <ImageView android:id="@id/pop_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:src="@drawable/delete" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/txt_title" android:background="#ffffffff" android:padding="30.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" />
+    <ScrollView android:id="@id/sLayout_content" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/lLayout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:background="#ffcdcdcd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="9.0dip" />
+        <TextView android:background="#ffcdcdcd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/txt_cancel" android:background="@drawable/actionsheet_middle_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dp_55" android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

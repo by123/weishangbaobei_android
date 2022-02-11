@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_left_gap" android:background="#bb0a0d0f" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/view_left_tap" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentStart="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_clip_range_left" android:scaleType="fitStart" />
+        </FrameLayout>
+        <View android:background="@drawable/shape_rectangle_stroke_organge" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/view_right_tap" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_clip_range_right" android:scaleType="fitEnd" />
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:id="@id/view_right_gap" android:background="#bb0a0d0f" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="@dimen/dp_15" android:textColor="#ff333333" android:id="@id/nickName" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="张三" />
+        <TextView android:textSize="@dimen/dp_16" android:textColor="#ff333333" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="\ 15153270196" android:layout_weight="1.2" />
+        <TextView android:textSize="@dimen/dp_11" android:textColor="#ff333333" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/extra" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="" />
+        <CheckBox android:id="@id/ck" android:background="@drawable/selector_radio_bg" android:focusable="false" android:clickable="false" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="@dimen/dp_10" android:button="@null" />
+    </LinearLayout>
+    <include layout="@layout/divider_line" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/go_make_money_main_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_301" android:layout_height="@dimen/dp_147" android:layout_marginTop="@dimen/dp_57" android:src="@mipmap/go_make_money_title_1" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_290" android:layout_height="@dimen/dp_40" android:src="@mipmap/go_make_money_title_2" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_10">
+                <TextView android:textSize="@dimen/dp_13" android:textColor="@color/color_ffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="邀请好友开通会员即可获得邀请奖励" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/dp_13" android:textColor="@color/colorRedBg" android:gravity="center" android:id="@id/checkRule" android:background="@drawable/white_circle_bg" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_1" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_1" android:layout_width="wrap_content" android:layout_height="@dimen/dp_25" android:layout_marginLeft="@dimen/dp_5" android:text="点击查看规则" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/white_round_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_30" android:layout_marginRight="@dimen/dp_40">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@id/inviteUrl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="" android:layout_weight="1.0" />
+                <Button android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/copyBtn" android:background="@mipmap/go_make_money_copy" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_22" android:layout_marginRight="@dimen/dp_10" />
+            </LinearLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/forwardCircle" android:background="@mipmap/go_make_money_circle" android:layout_width="@dimen/dp_290" android:layout_height="@dimen/dp_47" android:layout_marginLeft="@dimen/dp_40" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="@dimen/dp_40" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_38" android:layout_marginTop="@dimen/dp_30" android:layout_marginRight="@dimen/dp_38">
+                <Button android:id="@id/inviteNow" android:background="@mipmap/go_make_money_invite" android:layout_width="@dimen/dp_156" android:layout_height="@dimen/dp_40" />
+                <Button android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/myAward" android:background="@mipmap/go_make_money_award" android:layout_width="@dimen/dp_122" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/backLayout" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_45">
+            <ImageView android:layout_gravity="center" android:background="@drawable/ic_back_white" android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_19" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

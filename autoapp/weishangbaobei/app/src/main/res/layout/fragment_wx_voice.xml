@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/dp_13" android:gravity="center" android:layout_gravity="center" android:id="@id/showTith" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="正在获取音频数据...请耐心等待！" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:srlAccentColor="@android:color/white" app:srlEnableHeaderTranslationContent="true" app:srlEnableLoadMore="false" app:srlPrimaryColor="@color/refresh_color">
+        <com.scwang.smartrefresh.header.BezierCircleHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ListView android:scrollbarStyle="outsideInset" android:id="@id/listView" android:background="#ffffffff" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="@dimen/dp_0" android:overScrollMode="never" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

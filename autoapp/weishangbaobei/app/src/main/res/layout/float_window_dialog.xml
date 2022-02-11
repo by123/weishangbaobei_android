@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/lLayout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bottomLayout" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottomWhiteLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_422">
+            <LinearLayout android:orientation="horizontal" android:id="@id/bottomWhiteTopLayout" android:background="@mipmap/main_bottom_hd_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center|top" android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dp_18" android:textColor="#ff000000" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择群发对象" />
+                    <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="left" android:id="@id/txt_msg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_350" android:layout_marginLeft="@dimen/dp_50" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_5" android:singleLine="false" android:lineSpacingExtra="10.0dip" android:textAllCaps="false" />
+                    <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/open_anr" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="17.0dip" android:textStyle="normal" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_pos" android:background="@drawable/main_btn_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginLeft="@dimen/dp_60" android:layout_marginRight="@dimen/dp_60" android:layout_marginBottom="@dimen/dp_50" android:text="" android:layout_weight="1.0" android:textAllCaps="false" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

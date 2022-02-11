@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/bar_grey_90" android:layout_width="fill_parent" android:layout_height="@dimen/bar_height" style="@style/MyToolbar">
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/white_text_selector" android:gravity="center" android:layout_gravity="right" android:id="@id/done_text" android:background="@drawable/btn_round_green_selector" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_marginRight="@dimen/margin_text" android:minWidth="@dimen/min_button_width" android:text="@string/use" />
+    </android.support.v7.widget.Toolbar>
+    <com.isseiaoki.simplecropview.CropImageView android:id="@id/cropImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:backgroundColor="@color/background_color" custom:cropMode="ratio_1_1" custom:frameColor="@color/frame_color" custom:frameStrokeWeight="1.0dip" custom:guideColor="@color/guide_color" custom:guideShowMode="show_always" custom:guideStrokeWeight="1.0dip" custom:handleColor="@color/handle_color" custom:handleShowMode="show_always" custom:handleSize="15.0dip" custom:minFrameSize="80.0dip" custom:overlayColor="@color/overlay_color" custom:touchPadding="15.0dip" />
+</LinearLayout>

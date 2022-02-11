@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/watermarkBarBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_paint_bar" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@id/paint_bar_exit" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="fill_parent" android:text="x" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/paint_bar" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/paint_bar_item_color" android:layout_width="60.0dip" android:layout_height="60.0dip" android:button="@null" android:text="颜色" android:drawableTop="@drawable/selector_bar_paint_color" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/paint_bar_item_line" android:layout_width="60.0dip" android:layout_height="60.0dip" android:button="@null" android:text="线条" android:drawableTop="@drawable/selector_bar_paint_size" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/paint_bar_item_shape" android:layout_width="60.0dip" android:layout_height="60.0dip" android:button="@null" android:text="形状" android:drawableTop="@drawable/selector_bar_paint_shape" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/paint_edit_bar" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_above="@id/layout_paint_bar">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/layout_paint_edit_color" android:background="#11ff3300" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <com.fb.jjyyzjy.watermark.view.watermarkbar.ColorRadioButton android:background="@drawable/selector_select_color_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" />
+            <com.fb.jjyyzjy.watermark.view.watermarkbar.ColorRadioButton android:background="@drawable/selector_select_color_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" />
+            <com.fb.jjyyzjy.watermark.view.watermarkbar.ColorRadioButton android:background="@drawable/selector_select_color_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" />
+            <com.fb.jjyyzjy.watermark.view.watermarkbar.ColorRadioButton android:background="@drawable/selector_select_color_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" />
+            <com.fb.jjyyzjy.watermark.view.watermarkbar.ColorRadioButton android:background="@drawable/selector_select_color_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" />
+            <com.fb.jjyyzjy.watermark.view.watermarkbar.ColorRadioButton android:background="@drawable/selector_select_color_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" />
+            <com.fb.jjyyzjy.watermark.view.watermarkbar.ColorRadioButton android:background="@drawable/selector_select_color_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" />
+            <com.fb.jjyyzjy.watermark.view.watermarkbar.ColorRadioButton android:background="@drawable/selector_select_color_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="线条粗细" />
+            <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/layout_paint_edit_size" android:background="@drawable/drawable_select_size_line" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+                <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+                <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+                <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+                <com.fb.jjyyzjy.watermark.view.watermarkbar.SizeRadioButton android:background="@drawable/selector_select_size_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:button="@null" android:layout_weight="1.0" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <android.support.design.widget.TabLayout android:id="@id/layout_paint_edit_shape" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <android.support.design.widget.TabItem android:icon="@drawable/selector_paint_shape_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <android.support.design.widget.TabItem android:icon="@drawable/selector_paint_shape_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <android.support.design.widget.TabItem android:icon="@drawable/selector_paint_shape_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <android.support.design.widget.TabItem android:icon="@drawable/selector_paint_shape_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <android.support.design.widget.TabItem android:icon="@drawable/selector_paint_shape_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <android.support.design.widget.TabItem android:icon="@drawable/selector_paint_shape_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <android.support.design.widget.TabItem android:icon="@drawable/selector_paint_shape_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </android.support.design.widget.TabLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <ImageView android:background="@mipmap/function_find_group" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_12" />
+            <com.wx.assistants.view.CustomRadioTwoLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/picVideoRadioLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/dp_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_42" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10">
+            <com.wx.assistants.view.CustomGridView android:id="@id/productGridView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="9.0dip" android:verticalSpacing="9.0dip" android:columnWidth="@dimen/dp_96" android:numColumns="3" />
+        </LinearLayout>
+        <com.wx.assistants.view.CustomRadioSwitchLayout android:id="@id/customRadioSwitchLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_42" android:layout_marginRight="@dimen/dp_10" />
+        <com.wx.assistants.view.SendOrderLayout android:id="@id/sendOrderLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_42" android:layout_marginRight="@dimen/dp_10" />
+    </LinearLayout>
+</LinearLayout>

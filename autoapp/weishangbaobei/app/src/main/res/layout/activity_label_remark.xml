@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_bar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_13" android:text="备注前缀" />
+            </LinearLayout>
+            <EditText android:textSize="@dimen/sp_15" android:textColor="@color/color_333333" android:textColorHint="@color/color_hint" android:gravity="center|left" android:id="@id/remarkName" android:background="@drawable/main_input_rect_bg" android:paddingLeft="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_15" android:hint="给好友昵称前面加上前缀" android:textCursorDrawable="@drawable/edittext_cursor_block_color" />
+            <LinearLayout android:orientation="vertical" android:id="@id/labelLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_10" android:text="添加标签" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_13" android:layout_below="@id/anchor_6">
+                    <EditText android:textSize="@dimen/sp_14" android:gravity="start" android:id="@id/labelName" android:background="@drawable/main_input_rect_bg" android:padding="@dimen/dp_10" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" android:hint="将好友添加到指定的标签" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:textCursorDrawable="@drawable/edittext_cursor_block_color" />
+                    <ImageView android:id="@id/show_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" android:src="@mipmap/show_img" android:layout_alignParentRight="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+            <com.wx.assistants.view.LabelRemarkSelectLayout android:id="@id/friendSendModeLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" />
+            <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+            <com.wx.assistants.view.ExecuteTimeSpaceLayout android:gravity="center_vertical" android:id="@id/executeTimeSpaceLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+            <com.wx.assistants.view.LabelAutoBatchLayout android:id="@id/labelAutoBatchLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_5" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/divider_line" />
+            <include layout="@layout/nav_start_wx_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

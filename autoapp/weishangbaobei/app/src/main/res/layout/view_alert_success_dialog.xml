@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lLayout_bg" android:background="#ff000001" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/letter_overlay_view_background" android:layout_width="117.0dip" android:layout_height="117.0dip">
+        <ImageView android:id="@id/successImg" android:background="@drawable/icon_download_success" android:layout_width="49.0dip" android:layout_height="49.0dip" android:layout_marginTop="24.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/successText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

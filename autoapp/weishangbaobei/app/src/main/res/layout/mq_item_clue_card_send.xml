@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_chat_right_textColor" android:id="@id/mq_send_tv" android:background="@drawable/mq_shape_send_button" android:paddingLeft="@dimen/mq_size_level3" android:paddingTop="@dimen/mq_size_level1" android:paddingRight="@dimen/mq_size_level3" android:paddingBottom="@dimen/mq_size_level1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mq_send"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

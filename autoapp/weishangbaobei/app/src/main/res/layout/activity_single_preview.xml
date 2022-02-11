@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/navigation_bar" />
+    <com.meiqia.meiqiasdk.third.photoview.PhotoView android:scrollbarSize="4.0dip" android:scrollbarStyle="insideOverlay" android:id="@id/intensify_image" android:padding="2.0dip" android:scrollbars="horizontal|vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/arrow_back" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginLeft="@dimen/sp_14" android:src="@drawable/main_back_img" />
+        </LinearLayout>
+        <com.sevenheaven.segmentcontrol.SegmentControl android:textSize="16.0dip" android:layout_gravity="center" android:id="@id/segment_control" android:layout_width="170.0dip" android:layout_height="wrap_content" app:backgroundColors="@color/segment_background_color" app:boundWidth="1.0dip" app:cornerRadius="8.0dip" app:horizonGap="@dimen/dp_6" app:separatorWidth="1.0dip" app:textColors="@color/segment_text_color" app:texts="我的订单|会员卡" app:verticalGap="@dimen/dp_6" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <include layout="@layout/divider_line" />
+    <FrameLayout android:id="@id/myFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

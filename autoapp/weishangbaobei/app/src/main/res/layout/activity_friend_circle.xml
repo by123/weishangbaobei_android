@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/navigation_bar" />
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/scrollTextView" android:background="@color/main_ff6a8d" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:text="温馨提示：推广素材里的下载链接，是您的专属推广链接，邀请好友开通会员最高可获得40%推广佣金！" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlAccentColor="@android:color/white" app:srlEnableHeaderTranslationContent="true" app:srlEnableLoadMore="false" app:srlPrimaryColor="@color/refresh_color">
+        <com.scwang.smartrefresh.header.BezierCircleHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

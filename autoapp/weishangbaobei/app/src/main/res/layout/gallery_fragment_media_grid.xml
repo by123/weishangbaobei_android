@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.finalteam.rxgalleryfinal.ui.widget.RecyclerViewFinal android:id="@id/rv_media" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_bottom_bar" android:background="#ef2b2c30" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/gallery_text_color_selector" android:gravity="center_vertical" android:id="@id/tv_folder_name" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gallery_all_image" android:drawableRight="@drawable/gallery_ic_corner_selector" android:drawablePadding="3.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gallery_text_color_selector" android:gravity="center_vertical" android:id="@id/tv_preview" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/gallery_preview_title" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <View android:id="@id/tv_preview_vr" android:background="#ff1f1f1f" android:layout_width="1.0dip" android:layout_height="28.0dip" android:layout_toLeftOf="@id/tv_preview" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_bucket_overview" android:background="@color/gallery_media_grid_block_color" android:paddingTop="?actionBarSize" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_bottom_bar">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_bucket" android:background="@color/gallery_bucket_list_item_normal_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar" />
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery_loading_view_loading" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_90"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <www.linwg.org.lib.LCardView android:layout_gravity="center_vertical" android:id="@id/sendContent1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" app:cornerRadius="@dimen/dp_8" app:shadowColor="#ffffffff" app:shadowFluidShape="linear" app:shadowSize="@dimen/dp_8" app:shadowStartAlpha="20">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_95" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/function_only_text" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="只发文字" />
+        </LinearLayout>
+    </www.linwg.org.lib.LCardView>
+    <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <www.linwg.org.lib.LCardView android:layout_gravity="center_vertical" android:id="@id/sendContent2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" app:cornerRadius="@dimen/dp_8" app:shadowColor="@color/card_bg_color_block" app:shadowFluidShape="linear" app:shadowSize="@dimen/dp_8" app:shadowStartAlpha="20">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_95" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/home_item_group_img_text" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="图文并发" />
+        </LinearLayout>
+    </www.linwg.org.lib.LCardView>
+    <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <www.linwg.org.lib.LCardView android:layout_gravity="center_vertical" android:id="@id/sendContent3" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" app:cornerRadius="@dimen/dp_8" app:shadowColor="@color/white" app:shadowFluidShape="linear" app:shadowSize="@dimen/dp_8" app:shadowStartAlpha="20">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_95" android:layout_height="fill_parent">
+            <ImageView android:background="@mipmap/function_only_pic" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="只发图片" />
+        </LinearLayout>
+    </www.linwg.org.lib.LCardView>
+    <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

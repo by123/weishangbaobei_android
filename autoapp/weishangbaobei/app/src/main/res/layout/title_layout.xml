@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/arrow_back" android:layout_width="@dimen/dp_50" android:layout_height="fill_parent">
+        <ImageView android:id="@id/icon_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_14" android:src="@mipmap/icon_fanhui_zd" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动加附近的人" android:layout_centerInParent="true" />
+</RelativeLayout>

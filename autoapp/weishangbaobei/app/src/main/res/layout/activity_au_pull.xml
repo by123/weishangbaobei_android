@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_bar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.wx.assistants.view.FriendSendModeLayout2 android:id="@id/friendSendModelLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_16" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" layout="@layout/divider_line_height20" />
+            <com.wx.assistants.view.NumSettingOnlyLayout android:id="@id/numSettingOnlyLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" layout="@layout/divider_line_height20" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:background="@mipmap/function_say_hello" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_11" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_13" android:layout_marginRight="@dimen/dp_10" android:text="遇到需要进群审核的情况，您可设置给群主留言信息，也可不填" android:layout_below="@id/anchor_4" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/editLeavingMessageLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_13" android:layout_below="@id/anchor_6">
+                <EditText android:textSize="@dimen/dp_15" android:gravity="start" android:id="@id/editLeavingMessage" android:background="@drawable/main_input_rect_bg" android:padding="@dimen/dp_10" android:layout_width="0.0dip" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_13" android:layout_marginRight="@dimen/dp_14" android:hint="请输入给群主审核的留言信息,非必填" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:textCursorDrawable="@drawable/edittext_cursor_block_color" />
+                <ImageView android:id="@id/show_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" android:src="@mipmap/show_img" android:layout_alignParentRight="true" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" layout="@layout/divider_line_height20" />
+            <com.wx.assistants.view.CustomSpeedLayout android:id="@id/customSpeedLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/nav_start_wx_layout" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white_70" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="粗细" android:layout_weight="1.0" />
+    <SeekBar android:id="@id/sb_frame" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="30.0dip" android:maxHeight="6.0dip" android:max="100" android:progressDrawable="@drawable/seekbar_bg" android:minHeight="6.0dip" android:thumb="@drawable/hollow_circle_shape" android:thumbOffset="0.0dip" android:layout_weight="4.0" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white_70" android:gravity="center" android:id="@id/tv_frame" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+</LinearLayout>

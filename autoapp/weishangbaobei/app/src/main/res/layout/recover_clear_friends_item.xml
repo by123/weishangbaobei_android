@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="微信号：" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#ff333333" android:id="@id/wxNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="张三" />
+                <TextView android:textSize="@dimen/dp_11" android:textColor="@color/main_color" android:id="@id/isAdded" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="【已添加过】" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="好友昵称：" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#ff333333" android:id="@id/wxNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="张三" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#ff333333" android:id="@id/deleteTimeLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="删除时间：" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#ff333333" android:id="@id/deleteTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="xxxx-xxx-xx" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:gravity="center_vertical" android:id="@id/ck" android:background="@drawable/selector_radio_bg" android:focusable="false" android:clickable="false" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="@dimen/dp_10" android:button="@null" />
+    </LinearLayout>
+    <include layout="@layout/divider_line" />
+</LinearLayout>

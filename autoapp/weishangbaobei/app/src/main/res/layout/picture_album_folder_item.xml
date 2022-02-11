@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff414141" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_first_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/first_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tv_sign" android:background="?picture.folder_checked_dot" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_margin="4.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/rl_first_image">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="相机胶卷" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/image_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0" android:layout_toRightOf="@id/tv_folder_name" />
+    </LinearLayout>
+    <View android:background="#684d4d4d" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

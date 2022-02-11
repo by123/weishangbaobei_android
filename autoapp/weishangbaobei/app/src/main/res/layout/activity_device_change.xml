@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/navigation_bar" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="start" android:id="@id/editLeavingMessage" android:background="@drawable/main_input_rect_bg_2" android:padding="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="@dimen/dp_125" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_13" android:layout_marginRight="@dimen/dp_20" android:text="检测到当前会员用户更换了手机设备登录，原则上一个会员账号只能在一个手机设备上使用，您若要在新设备上使用，请支付5元服务费（新设备使用之后，旧设备将无法使用），支付完毕后，新设备便可使用原设备的所有功能。" android:layout_alignParentLeft="true" android:lineSpacingExtra="@dimen/dp_3" android:textCursorDrawable="@drawable/edittext_cursor_block_color" />
+            <TextView android:textSize="@dimen/dp_15" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_15" android:text="账号可替换的设备" android:lineSpacingExtra="@dimen/dp_3" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_10" android:textColor="@color/color_666666" android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="@dimen/dp_2" android:layout_marginRight="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_10" android:text="查看设备信息 微商宝贝-设置-当前设备" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/dp_2" />
+                <Button android:textSize="13.0dip" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/onLineSuggestServiceBtn" android:background="@drawable/radiobutton_bg" android:paddingLeft="@dimen/dp_3" android:paddingRight="@dimen/dp_3" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="26.0dip" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_10" android:checked="true" android:button="@null" android:text="在线客服" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginRight="@dimen/dp_15" layout="@layout/divider_line_height20" />
+            <ListView android:id="@id/deviceListView" android:background="@color/white" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="@dimen/dp_0" android:layout_weight="1.0" />
+            <include layout="@layout/divider_line" />
+            <RelativeLayout android:id="@id/setWxPayment" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45">
+                <ImageView android:id="@id/anchor_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:src="@mipmap/wx" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:text="微信支付" android:layout_toRightOf="@id/anchor_1" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/setWxRadioButton" android:background="@drawable/selector_radio_bg" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/dp_15" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include layout="@layout/divider_line" />
+            <RelativeLayout android:id="@id/setZfbPayment" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45">
+                <ImageView android:id="@id/anchor_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:src="@mipmap/ali" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:text="支付宝支付" android:layout_toRightOf="@id/anchor_2" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/setZfbRadioButton" android:background="@drawable/selector_radio_bg" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/dp_15" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setAgreement" android:layout_width="fill_parent" android:layout_height="@dimen/dp_47">
+                <TextView android:background="@color/color_ffffff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:layout_width="@dimen/dp_17" android:layout_height="@dimen/dp_17" android:layout_marginLeft="@dimen/dp_15" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="@dimen/sp_10" android:textColor="@color/main_color" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_13" android:text="微商宝贝用户付费协议" android:layout_toRightOf="@id/anchor_3" android:layout_centerVertical="true" />
+                    <LinearLayout android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_13" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/divider_line" />
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_46">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_5" android:text="总计" />
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/main_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_3" android:layout_marginTop="@dimen/dp_5" android:text="¥" />
+                    <TextView android:textSize="@dimen/dp_24" android:textColor="@color/main_color" android:gravity="center" android:id="@id/setAmountPrice" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_2" android:layout_marginTop="@dimen/dp_2" android:text="5.00" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/setPayment" android:background="@color/main_color" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="立即支付" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

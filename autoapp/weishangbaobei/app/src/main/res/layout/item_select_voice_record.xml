@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/voiceTime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:text="2008年9月20日" />
+        <FrameLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/playLayout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/voice_play_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_22" android:layout_marginLeft="@dimen/sp_10">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/iea_ll_singer" android:background="@drawable/anim_yuyin_sign" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_marginLeft="@dimen/dp_10" />
+                    <TextView android:textSize="15.0dip" android:textColor="#ff686666" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/iea_tv_voicetime1" android:layout_width="@dimen/dp_40" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:text="1 ''" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/voiceCollection" android:background="@drawable/voice_collection_bg" android:paddingLeft="@dimen/dp_7" android:paddingRight="@dimen/dp_7" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:layout_marginLeft="@dimen/dp_5" android:minWidth="@dimen/dp_40" android:text="收藏" />
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/voiceToGroup" android:background="@drawable/voice_to_group_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:layout_marginLeft="@dimen/dp_5" android:minWidth="@dimen/dp_58" android:text="转发到群" />
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/voiceDelete" android:background="@drawable/voice_delete_bg" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_21" android:layout_marginLeft="@dimen/dp_10" android:text="删除" />
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/voiceForward" android:background="@drawable/voice_forward_bg" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="@dimen/dp_21" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:text="确定选择" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/divider_line" />
+</LinearLayout>

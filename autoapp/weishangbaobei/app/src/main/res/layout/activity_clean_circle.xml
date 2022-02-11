@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_bar" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_53" android:layout_marginTop="@dimen/dp_50">
+        <Button android:textColor="@color/white" android:id="@id/btnComplete" android:background="@drawable/clean_circle_left_select" android:layout_width="@dimen/dp_127" android:layout_height="@dimen/dp_35" android:text="全部清理" />
+        <Button android:textColor="@color/main_color" android:id="@id/btnTime" android:background="@drawable/clean_circle_right_nor" android:layout_width="@dimen/dp_127" android:layout_height="@dimen/dp_35" android:text="按时间清理" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutTimeFrame" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_59" android:layout_marginTop="@dimen/dp_19">
+            <TextView android:textSize="@dimen/dp_10" android:textColor="#ff606060" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="从这个时间开始清理" />
+            <TextView android:textColor="#ff606060" android:id="@id/startDateText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_19">
+            <TextView android:textSize="@dimen/dp_10" android:textColor="#ff606060" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="从这个时间结束清理" />
+            <TextView android:textColor="#ff606060" android:id="@id/endDateText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30">
+        <include layout="@layout/nav_start_wx_layout" />
+    </LinearLayout>
+</LinearLayout>

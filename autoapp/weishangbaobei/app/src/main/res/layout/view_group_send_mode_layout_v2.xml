@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_5">
+        <RelativeLayout android:id="@id/allLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+            <ImageView android:id="@id/imgAll" android:background="@drawable/selector_radio_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_6" android:checked="true" android:button="@null" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgAll">
+                <TextView android:textSize="@dimen/dp_13" android:textColor="@color/color_333333" android:id="@id/sendAllTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邀请到所有群" />
+                <TextView android:textSize="@dimen/dp_10" android:textColor="#ff666666" android:id="@id/sendAllSmallTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保存到通讯录的所有群" />
+            </LinearLayout>
+        </RelativeLayout>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" layout="@layout/main_set_start" />
+        <RelativeLayout android:id="@id/partLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@id/sendAllGroupText">
+            <ImageView android:id="@id/imgPart" android:background="@drawable/selector_radio_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:layout_marginTop="@dimen/dp_2" android:layout_toRightOf="@id/imgPart">
+                <TextView android:textSize="@dimen/dp_13" android:textColor="@color/color_333333" android:id="@id/sendPartTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邀请到部分群" />
+                <TextView android:textSize="@dimen/dp_10" android:textColor="#ff666666" android:id="@id/sendPartSmallTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邀请到选中的群聊" />
+            </LinearLayout>
+        </RelativeLayout>
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" layout="@layout/main_set_start2" />
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" layout="@layout/main_set_tag_2" />
+        <RelativeLayout android:id="@id/shieldLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@id/sendPartGroupText">
+            <ImageView android:id="@id/imgShield" android:background="@drawable/selector_radio_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:layout_toRightOf="@id/imgShield">
+                <TextView android:textSize="@dimen/dp_13" android:textColor="@color/color_333333" android:id="@id/sendShieldTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="屏蔽部分群" />
+                <TextView android:textSize="@dimen/dp_10" android:textColor="#ff666666" android:id="@id/sendShieldSmallTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选中的群聊不邀请" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" layout="@layout/main_set_start3" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" layout="@layout/main_set_tag_3" />
+</LinearLayout>

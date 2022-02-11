@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff9f9f9" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_bar" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.wx.assistants.view.NumSettingLayout android:gravity="center_vertical" android:id="@id/numberSettingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/dp_13" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" layout="@layout/divider_line" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_42" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_18" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_18">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="添加好友时，是否过滤" />
+                <TextView android:textSize="@dimen/dp_13" android:textColor="@color/black_trans70" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_4" android:text="对好友昵称中包含指定文字的不加" />
+            </LinearLayout>
+            <Switch android:gravity="center|right" android:id="@id/remarkSwitchBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" />
+        </LinearLayout>
+        <EditText android:textSize="@dimen/dp_15" android:textColorHint="@color/color_hint" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/sayContent" android:background="@drawable/main_input_rect_bg" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_13" android:hint="请输入过滤信息。多个过滤信息，请用@隔开。" android:maxLength="100" android:textCursorDrawable="@drawable/edittext_cursor_block_color" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/divider_line" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_42" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_18" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_18">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="添加好友后，是否发信息" />
+                <TextView android:textSize="@dimen/dp_13" android:textColor="@color/black_trans70" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_4" android:text="添加完好友后，自动发一条信息给TA" />
+            </LinearLayout>
+            <Switch android:gravity="center|right" android:id="@id/remarkSwitchBtn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" />
+        </LinearLayout>
+        <EditText android:textSize="@dimen/dp_15" android:textColorHint="@color/color_hint" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/sayContent2" android:background="@drawable/main_input_rect_bg" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_13" android:minHeight="@dimen/dp_50" android:hint="请输入留言信息" android:maxLength="100" android:textCursorDrawable="@drawable/edittext_cursor_block_color" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/divider_line" />
+        <TextView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <include layout="@layout/nav_start_wx_layout" />
+    </LinearLayout>
+</LinearLayout>

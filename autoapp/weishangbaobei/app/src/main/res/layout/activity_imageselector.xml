@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/bar_grey_90" android:layout_width="fill_parent" android:layout_height="@dimen/bar_height" style="@style/MyToolbar">
+        <TextView android:enabled="false" android:textSize="@dimen/small_text_size" android:textColor="@color/white_text_selector" android:gravity="center" android:layout_gravity="right" android:id="@id/done_text" android:background="@drawable/btn_round_green_selector" android:layout_width="wrap_content" android:layout_height="@dimen/btn_height" android:layout_marginRight="@dimen/margin_text" android:text="@string/done" />
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <android.support.v7.widget.RecyclerView android:id="@id/folder_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/preText" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:text="..正在获取数据.." />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/bar_grey_90" android:layout_width="fill_parent" android:layout_height="@dimen/bar_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/folder_layout" android:paddingLeft="@dimen/margin_layout" android:paddingRight="@dimen/margin_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/middle_text_size" android:textColor="@color/white" android:id="@id/folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_image" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_text" android:layout_marginTop="4.0dip" android:src="@mipmap/ic_arrow" />
+        </LinearLayout>
+        <TextView android:enabled="false" android:textSize="@dimen/middle_text_size" android:textColor="@color/white_text_selector" android:gravity="center" android:id="@id/preview_text" android:paddingLeft="@dimen/margin_layout" android:paddingRight="@dimen/margin_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/preview" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

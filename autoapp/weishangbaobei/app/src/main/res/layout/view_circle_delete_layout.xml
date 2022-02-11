@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+        <ImageView android:background="@mipmap/function_delete" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/sp_18" android:layout_marginTop="@dimen/dp_2" android:layout_marginRight="@dimen/dp_12" />
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="自动删除转发保存的图片" android:layout_weight="1.0" />
+        <Switch android:gravity="center|right" android:id="@id/switchButton" android:layout_width="@dimen/dp_45" android:layout_height="@dimen/dp_20" android:checked="true" android:thumb="@drawable/switch_custom_thumb_selector" android:track="@drawable/switch_custom_track_selector" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_7" android:layout_marginRight="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_10" android:text="若使用微信分身，防止误删，建议选择-否。特别说明：若选择删除，默认等下次再转发的时候，才进行删除本次转发的内容。" />
+</LinearLayout>

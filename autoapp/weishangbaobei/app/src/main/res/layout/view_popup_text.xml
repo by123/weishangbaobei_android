@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/watermarkBarBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/pop_btn_text_h" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="横排文字" android:drawableTop="@drawable/bar_text_h" android:layout_weight="1.0" />
+    <TextView android:textColor="@color/selector_bar_color" android:gravity="center" android:id="@id/pop_btn_text_v" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="竖排文字" android:drawableTop="@drawable/bar_text_v" android:layout_weight="1.0" />
+</LinearLayout>

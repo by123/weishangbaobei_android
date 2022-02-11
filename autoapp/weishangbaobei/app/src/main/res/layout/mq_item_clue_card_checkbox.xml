@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mq_textSize_level1" android:textColor="@color/mq_chat_event_gray" android:id="@id/mq_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mq_size_level1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/checkbox_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

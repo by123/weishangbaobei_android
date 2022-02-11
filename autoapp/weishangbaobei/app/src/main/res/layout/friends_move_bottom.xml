@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gray_seekbar" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/dp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/cleanAllBtn" android:background="@drawable/main_btn_bg_10" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:text="清空全部" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/dp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/cleanAddedBtn" android:background="@drawable/main_btn_bg_10" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:text="清除已加" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/dp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/autoCopy" android:background="@drawable/main_btn_bg_10" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:text="备份到手机" android:layout_weight="1.2" />
+        <Button android:textSize="@dimen/dp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/readFile" android:background="@drawable/main_btn_bg_10" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:text="查看备份" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

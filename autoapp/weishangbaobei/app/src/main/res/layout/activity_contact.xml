@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/navigation_bar" />
+    <include layout="@layout/divider_line" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:textSize="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="由于微信限制，一次最多可选20人。" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_14" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已选" />
+            <TextView android:textSize="@dimen/dp_15" android:textColor="@color/main_color" android:id="@id/selectPeopleNum" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="@dimen/dp_14" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人" />
+            <CheckBox android:id="@id/ck_all" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_seekbar" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ListView android:id="@id/contact_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/blue_tog_btn" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/re_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dp_15" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重新导入通讯录" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/dp_15" android:textColor="@color/white" android:id="@id/add_contact" android:background="@color/main_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:layout_weight="2.0" />
+    </LinearLayout>
+</LinearLayout>

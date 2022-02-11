@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_45">
+            <ImageView android:layout_gravity="center_vertical" android:background="@mipmap/function_circulation" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginRight="@dimen/dp_12" />
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="循环发送" />
+        </LinearLayout>
+        <RadioGroup android:gravity="center|right" android:orientation="horizontal" android:id="@id/circulateRG" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="@dimen/dp_12" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/circulateRB1" android:background="@drawable/radiobutton_bg" android:layout_width="60.0dip" android:layout_height="22.0dip" android:checked="true" android:button="@null" android:text="外循环" />
+            <RadioButton android:textSize="@dimen/dp_12" android:textColor="@color/radiobutton_color" android:gravity="center" android:id="@id/circulateRB2" android:background="@drawable/radiobutton_bg" android:layout_width="60.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:button="@null" android:text="内循环" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

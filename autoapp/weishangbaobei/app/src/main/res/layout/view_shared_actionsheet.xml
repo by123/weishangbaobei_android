@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+        <TextView android:textSize="@dimen/dp_11" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="邀请好友，可获得邀请奖励" />
+        <TextView android:textSize="@dimen/dp_11" android:textColor="@color/main_color" android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="邀请好友最高可返还40%" />
+    </LinearLayout>
+    <include layout="@layout/divider_line" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30">
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="分享到" />
+    </LinearLayout>
+    <include layout="@layout/divider_line" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/sharedWechatLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_wechat" />
+            <TextView android:textColor="@color/color_333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="微信" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sharedWechatCircleLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_wechat_circle" />
+            <TextView android:textColor="@color/color_333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="朋友圈" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sharedQQLayout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_qq" />
+            <TextView android:textColor="@color/color_333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="QQ" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sharedQzoneLayout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_qzone" />
+            <TextView android:textColor="@color/color_333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="QQ空间" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

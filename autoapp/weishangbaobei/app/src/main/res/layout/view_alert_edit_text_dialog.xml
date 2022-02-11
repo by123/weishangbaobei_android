@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lLayout_bg" android:background="@drawable/alertdialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#00000000" android:padding="@dimen/dp_30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="#ff000000" android:gravity="center" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_30" android:text="设置内容" android:textAllCaps="false" />
+        <EditText android:textSize="@dimen/dp_16" android:textColor="@color/black" android:gravity="center" android:id="@id/edit_Text" android:background="@drawable/main_input_rect_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:text="" android:lineSpacingExtra="2.0dip" android:inputType="text" android:textCursorDrawable="@drawable/ed_color" />
+        <Button android:textSize="@dimen/dp_16" android:textStyle="normal" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_pos" android:background="@drawable/main_btn_bg_10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_40" android:text="确 定" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

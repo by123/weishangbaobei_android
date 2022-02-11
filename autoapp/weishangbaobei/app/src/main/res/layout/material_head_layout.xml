@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/navLayout" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_20">
+            <TextView android:textSize="@dimen/dp_18" android:textColor="@color/black" android:layout_gravity="center|left" android:id="@id/navTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="30.0dip" android:text="" />
+            <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/navRightLayout" android:visibility="visible" android:layout_width="@dimen/dp_60" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:gravity="center|right" android:paddingRight="@dimen/dp_14" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginLeft="10.0dip" android:layout_marginRight="@dimen/dp_15" android:text="" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/setUserHead" android:background="@drawable/me_member_grade_no" android:layout_width="@dimen/dp_42" android:layout_height="@dimen/dp_42" android:layout_marginLeft="@dimen/dp_24" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_17" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@id/userPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:text="" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="#ff36333f" android:id="@id/inviteSelfUrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_15">
+            <ImageView android:background="@drawable/home_title_img" android:layout_width="@dimen/dp_7" android:layout_height="@dimen/dp_11" android:layout_marginTop="@dimen/dp_3" />
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/scrollTextView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="温馨提示：推广素材里的下载链接，是您的专属推广链接，邀请好友开通会员最高可获得40%推广佣金！" android:lineSpacingExtra="@dimen/dp_4" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

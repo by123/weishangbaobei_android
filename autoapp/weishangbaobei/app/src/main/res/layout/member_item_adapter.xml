@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_130" android:layout_height="@dimen/dp_130"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/shadowLinearLayout" android:background="@drawable/member_bg_shape_nor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/dp_17" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/memberNameText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_3" android:text="月度会员" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_12" android:textStyle="bold" android:textColor="@color/white" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/wxYuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+                <TextView android:textSize="@dimen/dp_25" android:textStyle="bold" android:textColor="@color/white" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/wxAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="98" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/color_a2a2a2" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/originAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" android:text="" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dp_10" android:textStyle="bold" android:textColor="@color/color_f880aa" android:gravity="center_horizontal" android:id="@id/describe" android:background="@drawable/pay_discount_withe_bg" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_13" android:layout_marginTop="@dimen/dp_7" android:layout_marginRight="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_13" android:text="10%返利特权" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/seckill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/miaosha" />
+    </FrameLayout>
+</LinearLayout>

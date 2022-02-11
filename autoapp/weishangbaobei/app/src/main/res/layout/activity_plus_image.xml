@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_image" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:background="#ff373b3e" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/back_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_back" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@null" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/position_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="15.0dip" android:layout_toEndOf="@id/back_iv" />
+            <ImageView android:id="@id/delete_iv" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/clean_img" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

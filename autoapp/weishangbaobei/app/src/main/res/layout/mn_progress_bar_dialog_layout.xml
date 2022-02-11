@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/dialog_window_background" android:background="@color/mn_colorDialogWindowBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/dialog_view_bg" android:background="@drawable/mn_dialog_view_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:minWidth="100.0dip" android:minHeight="100.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ProgressBar android:id="@id/horizontalProgressBar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginBottom="10.0dip" android:max="100" android:progress="20" android:secondaryProgress="80" android:layout_centerInParent="true" style="?android:progressBarStyleHorizontal" />
+                <com.wx.assistants.dialog.view.MNHudCircularProgressBar android:id="@id/circularProgressBar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" app:mn_background_progressbar_color="#ffa3a3a3" app:mn_background_progressbar_width="1.0dip" app:mn_progress="10" app:mn_progressbar_color="#ffffffff" app:mn_progressbar_width="3.0dip" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/mn_colorDialogTextColor" android:ellipsize="end" android:id="@id/tvShow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="当前进度0%" android:maxLines="6" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

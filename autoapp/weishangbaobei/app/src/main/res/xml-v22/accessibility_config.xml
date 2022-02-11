@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service android:description="@string/accessibility_desc" android:accessibilityEventTypes="typeAllMask" android:packageNames="com.tencent.mm,com.tencent.wework,dkplugin.xjg.tkz,com.ptg.ratelBox_sub1,com.ptg.ratelBox_sub2,com.ptg.ratelBox_sub3,com.excelliance.dualaid,com.xunrui.duokai_box,com.kuihua.wxfs1.ttrom.multplugin31,com.example.wx.assistant,marvelous.assist,com.guding.vssq" android:accessibilityFeedbackType="feedbackAllMask" android:notificationTimeout="1000" android:accessibilityFlags="flagDefault|flagReportViewIds|flagRetrieveInteractiveWindows" android:canRetrieveWindowContent="true" android:canPerformGestures="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fb.jjyyzjy.watermark.view.watermark.mosaic.MosaicWatermarkView android:layout_gravity="center" android:id="@id/vp_item_mosaic_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.fb.jjyyzjy.watermark.view.watermark.paint.PaintWatermarkView android:layout_gravity="center" android:id="@id/vp_item_paint_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.fb.jjyyzjy.watermark.view.watermark.paint.ShapeWatermarkView android:layout_gravity="center" android:id="@id/vp_item_paint_shape_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.fb.jjyyzjy.watermark.view.watermark.image.ImageWatermarkView android:layout_gravity="center" android:id="@id/vp_item_sticker_image_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>
